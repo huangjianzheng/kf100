@@ -1,0 +1,133 @@
+# 内嵌tomcat配置
+server.port=8080
+# 内嵌tomcat访问路径配置
+server.context-path=/
+# JDBC 配置
+spring.datasource.url=jdbc\:mysql\://192.168.5.250:3306/kf100?useUnicode\=true&characterEncoding\=utf-8&zeroDateTimeBehavior\=convertToNull&useSSL=false&useAffectedRows=true
+spring.datasource.username=root
+spring.datasource.password=root
+# mybatis-plus 配置
+mybatis-plus.global-config.refresh-mapper=true
+# 不使用springBoot 默认错误页
+server.error.whitelabel.enabled=true
+server.tomcat.uri-encoding=UTF-8
+# 出现错误时, 直接抛出异常
+spring.mvc.throw-exception-if-no-handler-found=true
+# 不要为我们工程中的资源文件建立映射
+spring.resources.add-mappings=false
+# css,js等静态资源压缩
+server.compression.enabled=true
+server.compression.mime-types=application/json,application/xml,text/html,text/xml,text/plain,text/css,application/javascript
+# 推送服务配置
+jpush.key=940c7eba1fa361b9e2e14ca2
+jpush.secret=f6a681a86234b468598d7014
+# jwt密钥
+jwt.secret=3f447f221134fbbc54fc13e48384cdd8
+# jwt 有效时间 7天
+jwt.period=604800000
+# spring缓存配置
+spring.cache.type=ehcache
+spring.cache.ehcache.config=classpath:ehcache.xml
+# JDBC配置
+spring.datasource.type=com.alibaba.druid.pool.DruidDataSource
+spring.datasource.driver-class-name=com.mysql.jdbc.Driver
+# druid连接池配置
+spring.datasource.druid.initial-size=10
+spring.datasource.druid.max-active=50
+spring.datasource.druid.min-idle=10
+spring.datasource.druid.max-wait=60000
+spring.datasource.druid.pool-prepared-statements=true
+spring.datasource.druid.max-open-prepared-statements=100
+spring.datasource.druid.validation-query=SELECT 'x'
+spring.datasource.druid.test-on-borrow=false
+spring.datasource.druid.test-on-return=false
+spring.datasource.druid.filters=stat,wall
+spring.datasource.druid.test-while-idle=true
+spring.datasource.druid.time-between-eviction-runs-millis=60000
+spring.datasource.druid.min-evictable-idle-time-millis=300000
+# 是否启用StatFilter默认值true
+spring.datasource.druid.filter.stat.log-slow-sql=true
+spring.datasource.druid.filter.stat.slow-sql-millis=5000
+spring.datasource.druid.filter.stat.merge-sql=true
+spring.datasource.druid.filter.stat.db-type=mysql
+spring.datasource.druid.filter.stat.enabled=true
+# 配置slf4j
+spring.datasource.druid.filter.slf4j.enabled=true
+spring.datasource.druid.filter.slf4j.connection-log-enabled=true
+spring.datasource.druid.filter.slf4j.connection-close-after-log-enabled=true
+spring.datasource.druid.filter.slf4j.connection-commit-after-log-enabled=true
+spring.datasource.druid.filter.slf4j.connection-connect-after-log-enabled=true
+spring.datasource.druid.filter.slf4j.connection-connect-before-log-enabled=true
+spring.datasource.druid.filter.slf4j.connection-log-error-enabled=true
+spring.datasource.druid.filter.slf4j.data-source-log-enabled=true
+spring.datasource.druid.filter.slf4j.result-set-log-enabled=true
+spring.datasource.druid.filter.slf4j.statement-log-enabled=true
+# 配置web-stat-filter
+spring.datasource.druid.web-stat-filter.enabled=true
+spring.datasource.druid.web-stat-filter.url-pattern=/*
+spring.datasource.druid.web-stat-filter.exclusions=*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*
+# 置profileEnable能够监控单个url调用的sql列表。
+spring.datasource.druid.web-stat-filter.profile-enable=true
+# session统计功能
+spring.datasource.druid.web-stat-filter.session-stat-enable=false
+# 最大session数
+spring.datasource.druid.web-stat-filter.session-stat-max-count=1500
+spring.datasource.druid.web-stat-filter.principal-cookie-name=alliance-token
+# 配置StatViewServlet
+spring.datasource.druid.stat-view-servlet.enabled=true
+spring.datasource.druid.stat-view-servlet.url-pattern=/druid/*
+spring.datasource.druid.stat-view-servlet.reset-enable=true
+# spring.datasource.druid.stat-view-servlet.allow=192.168.5.17,127.0.0.1
+# 登录账号
+spring.datasource.druid.stat-view-servlet.login-username=admin
+# 登录密码
+spring.datasource.druid.stat-view-servlet.login-password=Msp1234567
+# 配置wall filter
+spring.datasource.druid.filter.wall.enabled=true
+spring.datasource.druid.filter.wall.db-type=mysql
+spring.datasource.druid.filter.wall.config.alter-table-allow=false
+spring.datasource.druid.filter.wall.config.truncate-allow=false
+spring.datasource.druid.filter.wall.config.drop-table-allow=false
+# 是否允许非以上基本语句的其他语句，缺省关闭，通过这个选项就能够屏蔽DDL。
+spring.datasource.druid.filter.wall.config.none-base-statement-allow=false
+# 检查UPDATE语句是否无where条件，这是有风险的，但不是SQL注入类型的风险
+spring.datasource.druid.filter.wall.config.update-where-none-check=true
+# SELECT ... INTO OUTFILE 是否允许，这个是mysql注入攻击的常见手段，缺省是禁止的
+spring.datasource.druid.filter.wall.config.select-into-outfile-allow=false
+# 是否允许调用Connection.getMetadata方法，这个方法调用会暴露数据库的表信息
+spring.datasource.druid.filter.wall.config.metadata-allow=true
+# 对被认为是攻击的SQL进行LOG.error输出
+spring.datasource.druid.filter.wall.log-violation=true
+# 对被认为是攻击的SQL抛出SQLExcepton
+spring.datasource.druid.filter.wall.throw-exception=true
+# 配置Druid监控Spring包方法的调用
+spring.datasource.druid.aop-patterns=com.medhead.kf100.service.*
+# mybatis-plus 配置
+mybatis-plus.type-aliases-package=com.medhead.kf100.model
+mybatis-plus.mapper-locations=classpath:/mapper/*Mapper.xml
+#mybatis-plus.type-enums-package=com.medhead.kf100.model.enums
+mybatis-plus.global-config.field-strategy=1
+mybatis-plus.configuration.cache-enabled=false
+mybatis-plus.configuration.map-underscore-to-camel-case=true
+# logback 配置 打印 mybatis sql 语句
+logging.level.com.medhead.kf100.mapper=debug
+shiro.type=stateless
+# wxpay 配置
+# 公众号ID
+wxpay.sdk.appId=wxacc03e26933b9b8b
+# 公众号密钥
+wxpay.sdk.appSecret=9e7319ace6fe48c3a7b025e004601f3e
+# 商户号
+wxpay.sdk.mchId=1501895671
+# Key
+wxpay.sdk.mchKey=YDK6OUbJ3GHQOSiKnCTHmXjeOgFjCtyc
+# 微信支付回调地址
+wxpay.sdk.notifyUrl=${common.notifyurl}wx
+# 支付是否测试
+common.pay.isTest=false
+# 康复联盟公众号appid
+wxmp.sdk.appId=wx0048b943b7bd5ef4
+# 康复联盟公众号secret
+wxmp.sdk.appSecret=4ea91667112412618d72928b86378b49
+# 支付回调地址
+common.notifyurl=https://www.kf-100.com/api/notify/

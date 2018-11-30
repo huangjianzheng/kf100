@@ -1,0 +1,77 @@
+package com.medhead.kf100.conf;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.EnvironmentAware;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.core.env.Environment;
+import org.springframework.util.ResourceUtils;
+import org.springframework.util.StringUtils;
+import org.springframework.web.servlet.config.annotation.*;
+
+/**
+ * springmvc 配置类
+ */
+//@EnableWebMvc
+//@Configuration
+public class WebConfig extends WebMvcConfigurerAdapter implements EnvironmentAware {
+
+    private String[] origins;
+
+    @Value("${image.path}")
+    private String imagePath;
+    @Value("${admin.path}")
+    private String adminPath;
+    @Value("${h5.path}")
+    private String h5Path;
+    @Value("${apk.path}")
+    private String apkPath;
+
+    @Override
+    public void addResourceHandlers(ResourceHandlerRegistry registry) {
+
+        //  静态资源访问路径
+        registry.addResourceHandler("/page/admin/**")
+                .addResourceLocations(ResourceUtils.FILE_URL_PREFIX + adminPath);
+        registry.addResourceHandler("page/h5/**")
+                .addResourceLocations(ResourceUtils.FILE_URL_PREFIX + h5Path);
+        registry.addResourceHandler("/static/image/**")
+                .addResourceLocations(ResourceUtils.FILE_URL_PREFIX + imagePath);
+        registry.addResourceHandler("/static/apk/**")
+                .addResourceLocations(ResourceUtils.FILE_URL_PREFIX + apkPath);
+        registry.addResourceHandler("doc.html")
+                .addResourceLocations("classpath:/META-INF/resources/");
+        registry.addResourceHandler("/webjars/**")
+                .addResourceLocations("classpath:/META-INF/resources/webjars/");
+
+        super.addResourceHandlers(registry);
+    }
+
+
+    @Override
+    public void addCorsMappings(CorsRegistry registry) {
+        if(!StringUtils.isEmpty(origins)) {
+            registry.addMapping("/**")
+                    .allowedOrigins(origins)
+                    .allowedMethods("GET", "POST", "OPTIONS")
+                    .allowedHeaders("Content-Type", "X-Requested-With")
+                    .allowCredentials(true).maxAge(3600);
+        }
+    }
+
+
+    @Override
+    public void setEnvironment(Environment environment) {
+        String str = environment.getProperty("cors.allowed-origins");
+        if(StringUtils.isEmpty(str)) {
+            return;
+        }
+        this.origins = str.split(",");
+    }
+
+
+    @Override
+    public void addViewControllers(ViewControllerRegistry registry) {
+        registry.addRedirectViewController("/", "/page/admin/index.html");
+        super.addViewControllers(registry);
+    }
+}

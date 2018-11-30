@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.medhead.kf100.mapper.SysUserMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.medhead.kf100.model.SysUser">
+        <id column="id" property="id"/>
+        <result column="user_name" property="userName"/>
+        <result column="account" property="account"/>
+        <result column="cell_phone" property="cellPhone"/>
+        <result column="email" property="email"/>
+        <result column="create_time" property="createTime"/>
+        <result column="pass_word" property="passWord"/>
+        <result column="master_user_id" property="masterUserId"/>
+        <result column="purchase_status" property="purchaseStatus"/>
+        <result column="status" property="status"/>
+        <result column="user_type" property="userType"/>
+        <result column="account_type" property="accountType"/>
+        <result column="address" property="address"/>
+        <result column="corporation_name" property="corporationName"/>
+        <result column="company_name" property="companyName"/>
+        <result column="company_address" property="companyAddress"/>
+        <result column="business_license_number" property="businessLicenseNumber"/>
+        <result column="auth_image" property="authImage"/>
+        <collection property="sysUserRoleList" ofType="com.medhead.kf100.model.SysUserRole">
+            <id column="sur_id" property="id"/>
+            <result column="role_id" property="roleId"/>
+            <result column="user_id" property="userId"/>
+        </collection>
+    </resultMap>
+    <select id="selectById" resultMap="BaseResultMap" parameterType="long">
+        SELECT
+            su.*,
+            sur.id AS sur_id,
+            sur.role_id,
+            sur.user_id
+        FROM sys_user su
+            LEFT JOIN sys_user_role sur ON su.id = sur.user_id
+        WHERE su.id = #{userId}
+    </select>
+
+    <select id="selectManagerUserListByPage" resultType="com.medhead.kf100.model.SysUser">
+        SELECT
+            su.id,
+            su.user_name,
+            su.account,
+            sur.id AS sur_id,
+        GROUP_CONCAT(sr.role_name SEPARATOR ',') roleNames,
+        GROUP_CONCAT(sr.id SEPARATOR ',') roleIds
+        FROM sys_user su
+            LEFT JOIN sys_user_role sur on sur.user_id = su.id
+            LEFT JOIN sys_role sr on sr.id = sur.role_id
+        WHERE  sur.role_id IN (1,2,3)
+        <if test="keywords != null and keywords != ''">
+          AND (su.account like CONCAT('%',#{keywords},'%') OR  su.user_name like CONCAT('%',#{keywords},'%'))
+        </if>
+        GROUP BY su.id
+        ORDER BY su.id DESC
+    </select>
+</mapper>

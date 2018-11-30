@@ -1,0 +1,38 @@
+package com.medhead.kf100.conf;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.scheduling.annotation.EnableScheduling;
+import org.springframework.scheduling.annotation.SchedulingConfigurer;
+import org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler;
+import org.springframework.scheduling.config.ScheduledTaskRegistrar;
+
+/**
+ * spring 定时任务线程池配置类
+ */
+@Configuration
+@EnableScheduling
+public class SchedulingConfig implements SchedulingConfigurer {
+
+    private static final Logger LOG = LoggerFactory.getLogger(SchedulingConfig.class);
+
+    @Override
+    public void configureTasks(ScheduledTaskRegistrar scheduledTaskRegistrar) {
+        scheduledTaskRegistrar.setTaskScheduler(taskScheduler());
+    }
+
+    @Bean(destroyMethod = "shutdown")
+    public ThreadPoolTaskScheduler taskScheduler() {
+        ThreadPoolTaskScheduler scheduler = new ThreadPoolTaskScheduler();
+        scheduler.setPoolSize(5);
+        scheduler.setThreadNamePrefix("kf100-schedule");
+        scheduler.setAwaitTerminationSeconds(600);
+        scheduler.setErrorHandler(throwable -> LOG.error("调度任务发生异常", throwable));
+        scheduler.setWaitForTasksToCompleteOnShutdown(true);
+        return scheduler;
+    }
+
+
+}

@@ -1,0 +1,246 @@
+<template>
+  <div class="app-container">
+    <div class="filter-bar">
+      <el-input placeholder="姓名/账号" v-model="keywords" width="100px" style="width:195px;" clearable>
+        <i slot="prefix" class="el-input__icon el-icon-search"></i>
+      </el-input>
+      <el-button type="primary" plain @click="search">搜索</el-button>
+      <el-button type="primary" icon="el-icon-plus" plain class="fr" @click="newManager">新增管理员</el-button>
+    </div>
+    <el-table :data="records" v-loading.body="recordsLoading" element-loading-text="Loading" border fit highlight-current-row>
+      <el-table-column align="center" label='姓名' prop="userName">
+      </el-table-column>
+      <el-table-column label="账号" align="center" prop="account">
+      </el-table-column>
+      <el-table-column label="角色类型" align="center" prop="roleNames">
+      </el-table-column>
+      <el-table-column label="操作" width="110" align="center">
+        <template slot-scope="scope">
+          <label style="cursor: pointer;" @click="updateManager(scope.row)" v-if = "scope.row.roleNames!=='超级管理员'">修改</label>
+        </template>
+      </el-table-column>
+    </el-table>
+    <div class="page-bar">
+      <el-pagination
+        class="fr"
+        @size-change="handleSizeChange"
+        @current-change="handleCurrentChange"
+        :current-page="current"
+        :page-sizes="[10,20]"
+        :page-size="pageSize"
+        layout="total,  prev, pager, next, sizes,jumper"
+        :total="total">
+      </el-pagination>
+    </div>
+    <el-dialog title="新增/修改管理员" :visible.sync="dialogFormVisible" :before-close="handleDialogClose" :close-on-click-modal="false">
+      <el-form ref="managerForm" :model="managerForm" :rules="rules" label-width="100px">
+        <el-form-item label="角色：" prop="roleId">
+          <el-select v-model="managerForm.roleId" clearable placeholder="请选择">
+            <el-option v-for="item in options" :key="item.id" :label="item.roleName" :value="item.id">
+            </el-option>
+          </el-select>
+        </el-form-item>
+        <el-form-item label="姓名：" prop="userName">
+          <el-input placeholder="请输入姓名" v-model="managerForm.userName" clearable></el-input>
+        </el-form-item>
+        <el-form-item label="登陆账号：" prop="account" v-if="managerForm.userId === ''">
+          <el-input placeholder="请输入登陆账号" v-model="managerForm.account"  clearable ></el-input>
+        </el-form-item>
+        <el-form-item label="密码：" prop="passWord">
+          <el-input type="password" placeholder="请输入登陆密码" v-model="managerForm.passWord" clearable>
+          </el-input>
+        </el-form-item>
+      </el-form>
+      <div slot="footer" class="dialog-footer">
+        <el-button @click="dialogFormVisible = false">取 消</el-button>
+        <el-button type="primary" @click="submitManagerForm">确定</el-button>
+      </div>
+    </el-dialog>
+  </div>
+</template>
+
+<script>
+import {getManagerList,newManagerUser,updateManagerUser} from "../../api/manageruser";
+
+
+export default {
+    data() {
+      const validatePassWord = (rule, value, callback) => {
+        if(!this.managerForm.userId && value === ''){
+          callback(new Error('登录密码不能为空'));
+        }else{
+          callback();
+        }
+      };
+      return {
+        //表单校验
+        rules: {
+          roleId: [
+            {required: true, message: '请选择角色', trigger: 'blur'},
+          ],
+          userName: [
+            {required: true, message: '请输入姓名', trigger: 'blur'},
+          ],
+          account: [
+            {required: true, message: '请输入登录账号', trigger: 'blur'},
+          ],
+          passWord: [
+            { message: '请输入登录密码', trigger: 'blur',validator: validatePassWord},
+          ],
+        },
+        //可选权限列表
+        options: [
+          {
+            id:'2',
+            roleName:'运营管理员'
+          },
+          {
+            id:'3',
+            roleName:'财务管理员'
+          }
+        ],
+        //分页参数
+        total: 0,              //总记录数
+        pageSize: 10,          //每页记录数
+        records: [],           //记录列表
+        current: 1,            //当前页码
+        //筛选条件
+        keywords: '',        //搜索
+        dialogFormVisible:false,
+        recordsLoading:false,
+        managerFormLoading:false,
+        managerForm:{
+          userId:'',
+          roleId:'',
+          userName:'',
+          passWord:'',
+          account:''
+        }
+      }
+    },
+
+    created() {
+      this.fetchData();
+    },
+    methods: {
+      fetchData() {
+        this.recordsLoading = true;
+        getManagerList(this.keywords, this.current, this.pageSize).then(response => {
+          this.total = response.data.total;
+          this.records = response.data.records;
+          this.recordsLoading = false;
+        }).catch(error => {
+          this.recordsLoading = false;
+        });
+      },
+      newManager() {
+        this.dialogFormVisible = true;
+      },
+      updateManager(data) {
+        this.managerForm.roleId = data.roleIds;
+        this.managerForm.passWord = '';
+        this.managerForm.userName = data.userName;
+        this.managerForm.account = data.account;
+        this.managerForm.userId = data.id;
+        this.dialogFormVisible = true;
+      },
+      clearManagerForm(){
+        this.managerForm.roleId = '';
+        this.managerForm.passWord = '';
+        this.managerForm.userName = '';
+        this.managerForm.account = '';
+        this.managerForm.userId = '';
+      },
+      search() {
+        this.current = 1;
+        this.fetchData();
+      },
+      handleSizeChange(val) {
+        this.pageSize = val;
+        this.current = 1;
+        this.fetchData();
+      },
+      handleCurrentChange(val) {
+        this.current = val;
+        this.fetchData();
+      },
+      handleDialogClose() {
+        if (this.managerFormLoading !== true) {
+          this.clearManagerForm();
+          this.$refs.managerForm.clearValidate();
+          this.dialogFormVisible = false;
+        } else {
+          this.$message({
+            message: "正在提交中...",
+            type: "warning",
+            duration: 2 * 1000
+          });
+        }
+      },
+      submitManagerForm(){
+        this.$refs.managerForm.validate(valid => {
+          if (valid) {
+            this.managerFormLoading = true;
+            if(!this.managerForm.userId){
+              newManagerUser(this.managerForm.userName,this.managerForm.account,this.managerForm.passWord,this.managerForm.roleId).then(response => {
+                this.$message({
+                  message: "新建管理员成功",
+                  type: "success",
+                  duration: 2 * 1000
+                });
+                this.keywords = '';
+                this.current  = 1;
+                this.fetchData();
+                this.managerFormLoading = false;
+                this.handleDialogClose();
+              }).catch(error => {
+                this.managerFormLoading = false;
+              });
+            }else{
+              updateManagerUser(this.managerForm.userId,this.managerForm.userName,this.managerForm.passWord,this.managerForm.roleId).then(response => {
+                this.$message({
+                  message: "修改管理员成功",
+                  type: "success",
+                  duration: 2 * 1000
+                });
+                this.keywords = '';
+                this.current  = 1;
+                this.fetchData();
+                this.managerFormLoading = false;
+                this.handleDialogClose();
+              }).catch(error => {
+                this.managerFormLoading = false;
+              });
+            }
+          } else {
+            return false;
+          }
+        })
+      },
+    }
+  }
+</script>
+
+<style scoped>
+
+  .filter-bar {
+    padding: 10px 0px 10px 0px;
+  }
+
+  .page-bar {
+    padding: 10px 0px 10px 0px;
+  }
+
+  .fr {
+    float: right;
+  }
+
+  .fl {
+    float: left;
+  }
+
+  .el-input {
+    width: 400px;
+  }
+</style>
+

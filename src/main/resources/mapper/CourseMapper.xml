@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.medhead.kf100.mapper.CourseMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.medhead.kf100.model.Course">
+        <id column="id" property="id" />
+        <result column="title" property="title" />
+        <result column="logo" property="logo" />
+        <result column="introduction" property="introduction" />
+        <result column="create_time" property="createTime" />
+        <result column="visit_num" property="visitNum" />
+        <result column="status" property="status" />
+        <result column="lecturer_name" property="lecturerName" />
+    </resultMap>
+
+</mapper>

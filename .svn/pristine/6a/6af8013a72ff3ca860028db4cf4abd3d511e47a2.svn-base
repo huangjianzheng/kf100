@@ -1,0 +1,317 @@
+package com.medhead.kf100.model;
+
+import com.baomidou.mybatisplus.activerecord.Model;
+import com.baomidou.mybatisplus.annotations.TableField;
+import com.baomidou.mybatisplus.annotations.TableId;
+import com.baomidou.mybatisplus.annotations.TableName;
+import com.baomidou.mybatisplus.enums.IdType;
+import com.fasterxml.jackson.annotation.JsonInclude;
+
+import java.io.Serializable;
+import java.util.Date;
+import java.util.List;
+
+/**
+ * <p>
+ * <p>
+ * </p>
+ *
+ * @author ming
+ * @since 2018-11-27
+ */
+@TableName("sys_user")
+@JsonInclude(JsonInclude.Include.NON_EMPTY)
+public class SysUser extends Model<SysUser> {
+
+    private static final long serialVersionUID = 1L;
+
+    @TableId(value = "id", type = IdType.AUTO)
+    private Long id;
+    /**
+     * 用户姓名
+     */
+    @TableField("user_name")
+    private String userName;
+    /**
+     * 用户账号
+     */
+    private String account;
+    /**
+     * 用户手机号码
+     */
+    @TableField("cell_phone")
+    private String cellPhone;
+    /**
+     * 用户邮箱
+     */
+    private String email;
+    /**
+     * 创建时间
+     */
+    @TableField("create_time")
+    private Date createTime;
+    /**
+     * 密码
+     */
+    @TableField("pass_word")
+    private String passWord;
+    /**
+     * 主账号id
+     */
+    @TableField("master_user_id")
+    private Long masterUserId;
+    /**
+     * 用户购买状态 (1:已购买,0:未购买)
+     */
+    @TableField("purchase_status")
+    private Integer purchaseStatus;
+    /**
+     * 用户状态(1:正常 2:删除)
+     */
+    private Integer status;
+    /**
+     * 用户类型(1:个人用户,2:企业用户,3:管理员用户)
+     */
+    @TableField("user_type")
+    private Integer userType;
+    /**
+     * 账号类型(1:主账号,2:子账号)
+     */
+    @TableField("account_type")
+    private Integer accountType;
+    /**
+     * 联系人地址
+     */
+    private String address;
+    /**
+     * 公司法人名
+     */
+    @TableField("corporation_name")
+    private String corporationName;
+    /**
+     * 公司名
+     */
+    @TableField("company_name")
+    private String companyName;
+    /**
+     * 公司地址
+     */
+    @TableField("company_address")
+    private String companyAddress;
+    /**
+     * 营业执照编号
+     */
+    @TableField("business_license_number")
+    private String businessLicenseNumber;
+    /**
+     * 认证图片名
+     */
+    @TableField("auth_image")
+    private String authImage;
+
+    @TableField(exist = false)
+    private List<SysUserRole> sysUserRoleList;
+
+    @TableField(exist = false)
+    private String roleNames;
+
+    @TableField(exist = false)
+    private String roleIds;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    public String getAccount() {
+        return account;
+    }
+
+    public void setAccount(String account) {
+        this.account = account;
+    }
+
+    public String getCellPhone() {
+        return cellPhone;
+    }
+
+    public void setCellPhone(String cellPhone) {
+        this.cellPhone = cellPhone;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public Date getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(Date createTime) {
+        this.createTime = createTime;
+    }
+
+    public String getPassWord() {
+        return passWord;
+    }
+
+    public void setPassWord(String passWord) {
+        this.passWord = passWord;
+    }
+
+    public Long getMasterUserId() {
+        return masterUserId;
+    }
+
+    public void setMasterUserId(Long masterUserId) {
+        this.masterUserId = masterUserId;
+    }
+
+    public Integer getPurchaseStatus() {
+        return purchaseStatus;
+    }
+
+    public void setPurchaseStatus(Integer purchaseStatus) {
+        this.purchaseStatus = purchaseStatus;
+    }
+
+    public Integer getStatus() {
+        return status;
+    }
+
+    public void setStatus(Integer status) {
+        this.status = status;
+    }
+
+    public Integer getUserType() {
+        return userType;
+    }
+
+    public void setUserType(Integer userType) {
+        this.userType = userType;
+    }
+
+    public Integer getAccountType() {
+        return accountType;
+    }
+
+    public void setAccountType(Integer accountType) {
+        this.accountType = accountType;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getCorporationName() {
+        return corporationName;
+    }
+
+    public void setCorporationName(String corporationName) {
+        this.corporationName = corporationName;
+    }
+
+    public String getCompanyName() {
+        return companyName;
+    }
+
+    public void setCompanyName(String companyName) {
+        this.companyName = companyName;
+    }
+
+    public String getCompanyAddress() {
+        return companyAddress;
+    }
+
+    public void setCompanyAddress(String companyAddress) {
+        this.companyAddress = companyAddress;
+    }
+
+    public String getBusinessLicenseNumber() {
+        return businessLicenseNumber;
+    }
+
+    public void setBusinessLicenseNumber(String businessLicenseNumber) {
+        this.businessLicenseNumber = businessLicenseNumber;
+    }
+
+    public String getAuthImage() {
+        return authImage;
+    }
+
+    public void setAuthImage(String authImage) {
+        this.authImage = authImage;
+    }
+
+    @Override
+    protected Serializable pkVal() {
+        return this.id;
+    }
+
+    public List<SysUserRole> getSysUserRoleList() {
+        return sysUserRoleList;
+    }
+
+    public void setSysUserRoleList(List<SysUserRole> sysUserRoleList) {
+        this.sysUserRoleList = sysUserRoleList;
+    }
+
+    public String getRoleNames() {
+        return roleNames;
+    }
+
+    public void setRoleNames(String roleNames) {
+        this.roleNames = roleNames;
+    }
+
+    public String getRoleIds() {
+        return roleIds;
+    }
+
+    public void setRoleIds(String roleIds) {
+        this.roleIds = roleIds;
+    }
+
+    @Override
+    public String toString() {
+        return "SysUser{" +
+                ", id=" + id +
+                ", userName=" + userName +
+                ", account=" + account +
+                ", cellPhone=" + cellPhone +
+                ", email=" + email +
+                ", createTime=" + createTime +
+                ", passWord=" + passWord +
+                ", masterUserId=" + masterUserId +
+                ", purchaseStatus=" + purchaseStatus +
+                ", status=" + status +
+                ", userType=" + userType +
+                ", accountType=" + accountType +
+                ", address=" + address +
+                ", corporationName=" + corporationName +
+                ", companyName=" + companyName +
+                ", companyAddress=" + companyAddress +
+                ", businessLicenseNumber=" + businessLicenseNumber +
+                ", authImage=" + authImage +
+                "}";
+    }
+}

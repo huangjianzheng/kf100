@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <property name="SYS_LOG_DIR" value="./logs/"/>
+
+    <appender name="consoleAppender" class="ch.qos.logback.core.ConsoleAppender">
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <Pattern>.%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg %n
+            </Pattern>
+        </layout>
+        <!--过滤掉TRACE级别的log-->
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>TRACE</level>
+        </filter>
+    </appender>
+
+    <appender name="dailyRollingFileAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- daily rollover -->
+            <FileNamePattern>${SYS_LOG_DIR}/kf100/kf100.%d{yyyy-MM-dd}.log</FileNamePattern>
+            <!--<file>${SYS_LOG_DIR}/${LOG_FILE}</file>-->
+            <!-- keep 30 days' worth of history -->
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+        <encoder>
+            <Pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{35} - %msg %n</Pattern>
+        </encoder>
+    </appender>
+
+    <appender name="serverFile" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- daily rollover -->
+            <FileNamePattern>${SYS_LOG_DIR}/server/server.%d{yyyy-MM-dd}.log</FileNamePattern>
+            <!--<file>${SYS_LOG_DIR}/${LOG_FILE}</file>-->
+            <!-- keep 30 days' worth of history -->
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+        <encoder>
+            <Pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{35} - %msg %n</Pattern>
+        </encoder>
+    </appender>
+
+    <appender name="ERROR_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <FileNamePattern>${SYS_LOG_DIR}/error/error.%d{yyyy-MM-dd}.log</FileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+        <layout>
+            <pattern>[%date{yyyy-MM-dd HH:mm:ss}] [%-5level] [%logger:%line] --%mdc{client} %msg%n</pattern>
+        </layout>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>ERROR</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+    </appender>
+
+    <appender name="SMS_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- daily rollover -->
+            <FileNamePattern>${SYS_LOG_DIR}/sms/sms.%d{yyyy-MM-dd}.log</FileNamePattern>
+            <!--<file>${SYS_LOG_DIR}/${LOG_FILE}</file>-->
+            <!-- keep 30 days' worth of history -->
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+        <encoder>
+            <Pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{35} - %msg %n</Pattern>
+        </encoder>
+    </appender>
+
+
+
+    <logger name="com.medhead.kf100.common.util.sms.SmsUtils" additivity="false">
+        <level value="info"/>
+        <appender-ref ref="SMS_FILE"/>
+    </logger>
+
+
+
+    <logger name="com.medhead" additivity="false">
+        <level value="debug"/>
+        <appender-ref ref="consoleAppender"/>
+        <appender-ref ref="dailyRollingFileAppender"/>
+        <appender-ref ref="ERROR_FILE"/>
+    </logger>
+
+    <root>
+        <level value="info"/>
+        <appender-ref ref="consoleAppender"/>
+        <appender-ref ref="serverFile"/>
+        <appender-ref ref="ERROR_FILE"/>
+    </root>
+
+</configuration>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.medhead.kf100.mapper.ViewCourseRecoredMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.medhead.kf100.model.ViewCourseRecored">
+        <id column="id" property="id" />
+        <result column="course_chapter_id" property="courseChapterId" />
+        <result column="current_progress_time" property="currentProgressTime" />
+        <result column="max_progress_time" property="maxProgressTime" />
+        <result column="user_id" property="userId" />
+    </resultMap>
+
+</mapper>

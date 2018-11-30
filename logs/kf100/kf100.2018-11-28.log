@@ -1,0 +1,358 @@
+14:59:45.648 [main] INFO  c.m.kf100.mapper.SysUserMapperTest - Starting SysUserMapperTest on Kim-PC with PID 8792 (started by Administrator in D:\kf100) 
+14:59:45.654 [main] DEBUG c.m.kf100.mapper.SysUserMapperTest - Running with Spring Boot v1.5.14.RELEASE, Spring v4.3.18.RELEASE 
+14:59:45.655 [main] INFO  c.m.kf100.mapper.SysUserMapperTest - No active profile set, falling back to default profiles: default 
+14:59:50.673 [main] INFO  c.m.k.c.s.FilterChainDefinitionMapMetaSource - ShiroProperties{loginUrl='/page/admin/index.html#/login', successUrl='page/admin/index.html', unauthorizedUrl='page/admin/index.html#/404', FilterChainDefinitionMap={/static/**=anon, /page/download=anon, /page/h5/**=anon, /page/admin/**=anon, /api/admin/login=anon, /webjars/**=anon, /v2/api-docs=anon, /swagger-resources=anon, /doc.html=anon, /druid/**=anon, /=anon}} 
+14:59:54.900 [main] DEBUG c.m.k.m.S.selectList - ==>  Preparing: SELECT id AS id,`NAME` AS `name`,url,permissions,create_time AS createTime FROM sys_resource  
+14:59:55.136 [main] DEBUG c.m.k.m.S.selectList - ==> Parameters:  
+14:59:55.159 [main] DEBUG c.m.k.m.S.selectList - <==      Total: 7 
+14:59:55.160 [main] INFO  c.m.k.c.s.FilterChainDefinitionMapMetaSource - FilterChainDefinitionMap inited 
+14:59:55.160 [main] DEBUG c.m.k.c.shiro.StatelessShiroConfig - stateless shiroFilter init 
+15:00:00.470 [main] INFO  c.m.kf100.mapper.SysUserMapperTest - Started SysUserMapperTest in 16.158 seconds (JVM running for 19.256) 
+15:10:03.433 [main] INFO  c.m.kf100.mapper.SysUserMapperTest - Starting SysUserMapperTest on Kim-PC with PID 10500 (started by Administrator in D:\kf100) 
+15:10:03.434 [main] DEBUG c.m.kf100.mapper.SysUserMapperTest - Running with Spring Boot v1.5.14.RELEASE, Spring v4.3.18.RELEASE 
+15:10:03.434 [main] INFO  c.m.kf100.mapper.SysUserMapperTest - No active profile set, falling back to default profiles: default 
+15:10:05.668 [main] INFO  c.m.k.c.s.FilterChainDefinitionMapMetaSource - ShiroProperties{loginUrl='/page/admin/index.html#/login', successUrl='page/admin/index.html', unauthorizedUrl='page/admin/index.html#/404', FilterChainDefinitionMap={/static/**=anon, /page/download=anon, /page/h5/**=anon, /page/admin/**=anon, /api/admin/login=anon, /webjars/**=anon, /v2/api-docs=anon, /swagger-resources=anon, /doc.html=anon, /druid/**=anon, /=anon}} 
+15:10:07.908 [main] DEBUG c.m.k.m.S.selectList - ==>  Preparing: SELECT id AS id,`NAME` AS `name`,url,permissions,create_time AS createTime FROM sys_resource  
+15:10:08.066 [main] DEBUG c.m.k.m.S.selectList - ==> Parameters:  
+15:10:08.082 [main] DEBUG c.m.k.m.S.selectList - <==      Total: 7 
+15:10:08.083 [main] INFO  c.m.k.c.s.FilterChainDefinitionMapMetaSource - FilterChainDefinitionMap inited 
+15:10:08.083 [main] DEBUG c.m.k.c.shiro.StatelessShiroConfig - stateless shiroFilter init 
+15:10:11.547 [main] INFO  c.m.kf100.mapper.SysUserMapperTest - Started SysUserMapperTest in 8.63 seconds (JVM running for 9.551) 
+15:10:11.597 [main] DEBUG c.m.k.m.S.SelectAllUserListByPage - ==>  Preparing: SELECT su1.* FROM sys_user su1 LEFT JOIN sys_user su2 ON su1.master_user_id = su2.id WHERE su1.status = 1 AND su1.user_type IN (1,2) AND su1.email =?  
+15:10:11.625 [main] DEBUG c.m.k.m.S.SelectAllUserListByPage - ==> Parameters: 88888@qq.com(String) 
+15:10:11.628 [main] DEBUG c.m.k.m.S.SelectAllUserListByPage - <==      Total: 1 
+15:16:01.229 [main] INFO  c.m.kf100.mapper.SysUserMapperTest - Starting SysUserMapperTest on Kim-PC with PID 5624 (started by Administrator in D:\kf100) 
+15:16:01.230 [main] DEBUG c.m.kf100.mapper.SysUserMapperTest - Running with Spring Boot v1.5.14.RELEASE, Spring v4.3.18.RELEASE 
+15:16:01.231 [main] INFO  c.m.kf100.mapper.SysUserMapperTest - No active profile set, falling back to default profiles: default 
+15:16:03.528 [main] INFO  c.m.k.c.s.FilterChainDefinitionMapMetaSource - ShiroProperties{loginUrl='/page/admin/index.html#/login', successUrl='page/admin/index.html', unauthorizedUrl='page/admin/index.html#/404', FilterChainDefinitionMap={/static/**=anon, /page/download=anon, /page/h5/**=anon, /page/admin/**=anon, /api/admin/login=anon, /webjars/**=anon, /v2/api-docs=anon, /swagger-resources=anon, /doc.html=anon, /druid/**=anon, /=anon}} 
+15:16:05.830 [main] DEBUG c.m.k.m.S.selectList - ==>  Preparing: SELECT id AS id,`NAME` AS `name`,url,permissions,create_time AS createTime FROM sys_resource  
+15:16:05.983 [main] DEBUG c.m.k.m.S.selectList - ==> Parameters:  
+15:16:06.002 [main] DEBUG c.m.k.m.S.selectList - <==      Total: 7 
+15:16:06.003 [main] INFO  c.m.k.c.s.FilterChainDefinitionMapMetaSource - FilterChainDefinitionMap inited 
+15:16:06.003 [main] DEBUG c.m.k.c.shiro.StatelessShiroConfig - stateless shiroFilter init 
+15:16:09.420 [main] INFO  c.m.kf100.mapper.SysUserMapperTest - Started SysUserMapperTest in 8.732 seconds (JVM running for 9.578) 
+15:16:09.465 [main] DEBUG c.m.k.m.S.SelectAllUserListByPage - ==>  Preparing: SELECT su1.* FROM sys_user su1 LEFT JOIN sys_user su2 ON su1.master_user_id = su2.id WHERE su1.status = 1 AND su1.user_type IN (1,2) AND su1.email =?  
+15:16:09.492 [main] DEBUG c.m.k.m.S.SelectAllUserListByPage - ==> Parameters: 88888@qq.com(String) 
+15:16:09.495 [main] DEBUG c.m.k.m.S.SelectAllUserListByPage - <==      Total: 1 
+15:16:29.855 [main] INFO  c.m.kf100.mapper.SysUserMapperTest - Starting SysUserMapperTest on Kim-PC with PID 11016 (started by Administrator in D:\kf100) 
+15:16:29.856 [main] DEBUG c.m.kf100.mapper.SysUserMapperTest - Running with Spring Boot v1.5.14.RELEASE, Spring v4.3.18.RELEASE 
+15:16:29.856 [main] INFO  c.m.kf100.mapper.SysUserMapperTest - No active profile set, falling back to default profiles: default 
+15:16:31.895 [main] INFO  c.m.k.c.s.FilterChainDefinitionMapMetaSource - ShiroProperties{loginUrl='/page/admin/index.html#/login', successUrl='page/admin/index.html', unauthorizedUrl='page/admin/index.html#/404', FilterChainDefinitionMap={/static/**=anon, /page/download=anon, /page/h5/**=anon, /page/admin/**=anon, /api/admin/login=anon, /webjars/**=anon, /v2/api-docs=anon, /swagger-resources=anon, /doc.html=anon, /druid/**=anon, /=anon}} 
+15:16:34.876 [main] DEBUG c.m.k.m.S.selectList - ==>  Preparing: SELECT id AS id,`NAME` AS `name`,url,permissions,create_time AS createTime FROM sys_resource  
+15:16:35.030 [main] DEBUG c.m.k.m.S.selectList - ==> Parameters:  
+15:16:35.049 [main] DEBUG c.m.k.m.S.selectList - <==      Total: 7 
+15:16:35.051 [main] INFO  c.m.k.c.s.FilterChainDefinitionMapMetaSource - FilterChainDefinitionMap inited 
+15:16:35.051 [main] DEBUG c.m.k.c.shiro.StatelessShiroConfig - stateless shiroFilter init 
+15:16:39.870 [main] INFO  c.m.kf100.mapper.SysUserMapperTest - Started SysUserMapperTest in 10.611 seconds (JVM running for 13.086) 
+15:17:06.571 [main] DEBUG c.m.k.m.S.SelectAllUserListByPage - ==>  Preparing: SELECT su1.* FROM sys_user su1 LEFT JOIN sys_user su2 ON su1.master_user_id = su2.id WHERE su1.status = 1 AND su1.user_type IN (1,2)  
+15:17:06.682 [main] DEBUG c.m.k.m.S.SelectAllUserListByPage - ==> Parameters:  
+15:17:06.700 [main] DEBUG c.m.k.m.S.SelectAllUserListByPage - <==      Total: 2 
+15:17:16.313 [main] INFO  c.m.kf100.mapper.SysUserMapperTest - Starting SysUserMapperTest on Kim-PC with PID 10416 (started by Administrator in D:\kf100) 
+15:17:16.314 [main] DEBUG c.m.kf100.mapper.SysUserMapperTest - Running with Spring Boot v1.5.14.RELEASE, Spring v4.3.18.RELEASE 
+15:17:16.315 [main] INFO  c.m.kf100.mapper.SysUserMapperTest - No active profile set, falling back to default profiles: default 
+15:17:18.419 [main] INFO  c.m.k.c.s.FilterChainDefinitionMapMetaSource - ShiroProperties{loginUrl='/page/admin/index.html#/login', successUrl='page/admin/index.html', unauthorizedUrl='page/admin/index.html#/404', FilterChainDefinitionMap={/static/**=anon, /page/download=anon, /page/h5/**=anon, /page/admin/**=anon, /api/admin/login=anon, /webjars/**=anon, /v2/api-docs=anon, /swagger-resources=anon, /doc.html=anon, /druid/**=anon, /=anon}} 
+15:17:20.592 [main] DEBUG c.m.k.m.S.selectList - ==>  Preparing: SELECT id AS id,`NAME` AS `name`,url,permissions,create_time AS createTime FROM sys_resource  
+15:17:20.731 [main] DEBUG c.m.k.m.S.selectList - ==> Parameters:  
+15:17:20.749 [main] DEBUG c.m.k.m.S.selectList - <==      Total: 7 
+15:17:20.750 [main] INFO  c.m.k.c.s.FilterChainDefinitionMapMetaSource - FilterChainDefinitionMap inited 
+15:17:20.750 [main] DEBUG c.m.k.c.shiro.StatelessShiroConfig - stateless shiroFilter init 
+15:17:24.083 [main] INFO  c.m.kf100.mapper.SysUserMapperTest - Started SysUserMapperTest in 8.48 seconds (JVM running for 9.206) 
+15:17:24.127 [main] DEBUG c.m.k.m.S.SelectAllUserListByPage - ==>  Preparing: SELECT su1.* FROM sys_user su1 LEFT JOIN sys_user su2 ON su1.master_user_id = su2.id WHERE su1.status = 1 AND su1.user_type IN (1,2)  
+15:17:24.156 [main] DEBUG c.m.k.m.S.SelectAllUserListByPage - ==> Parameters:  
+15:17:24.163 [main] DEBUG c.m.k.m.S.SelectAllUserListByPage - <==      Total: 2 
+15:20:05.102 [main] INFO  c.m.kf100.mapper.SysUserMapperTest - Starting SysUserMapperTest on Kim-PC with PID 9324 (started by Administrator in D:\kf100) 
+15:20:05.104 [main] DEBUG c.m.kf100.mapper.SysUserMapperTest - Running with Spring Boot v1.5.14.RELEASE, Spring v4.3.18.RELEASE 
+15:20:05.104 [main] INFO  c.m.kf100.mapper.SysUserMapperTest - No active profile set, falling back to default profiles: default 
+15:20:07.204 [main] INFO  c.m.k.c.s.FilterChainDefinitionMapMetaSource - ShiroProperties{loginUrl='/page/admin/index.html#/login', successUrl='page/admin/index.html', unauthorizedUrl='page/admin/index.html#/404', FilterChainDefinitionMap={/static/**=anon, /page/download=anon, /page/h5/**=anon, /page/admin/**=anon, /api/admin/login=anon, /webjars/**=anon, /v2/api-docs=anon, /swagger-resources=anon, /doc.html=anon, /druid/**=anon, /=anon}} 
+15:20:09.464 [main] DEBUG c.m.k.m.S.selectList - ==>  Preparing: SELECT id AS id,`NAME` AS `name`,url,permissions,create_time AS createTime FROM sys_resource  
+15:20:09.604 [main] DEBUG c.m.k.m.S.selectList - ==> Parameters:  
+15:20:09.620 [main] DEBUG c.m.k.m.S.selectList - <==      Total: 7 
+15:20:09.621 [main] INFO  c.m.k.c.s.FilterChainDefinitionMapMetaSource - FilterChainDefinitionMap inited 
+15:20:09.622 [main] DEBUG c.m.k.c.shiro.StatelessShiroConfig - stateless shiroFilter init 
+15:20:13.010 [main] INFO  c.m.kf100.mapper.SysUserMapperTest - Started SysUserMapperTest in 8.763 seconds (JVM running for 9.652) 
+15:20:13.138 [main] DEBUG c.m.k.m.S.SelectAllUserListByPage - ==>  Preparing: SELECT COUNT(1) FROM sys_user su1 LEFT JOIN sys_user su2 ON su1.master_user_id = su2.id WHERE su1.status = 1 AND su1.user_type IN (1, 2)  
+15:20:13.164 [main] DEBUG c.m.k.m.S.SelectAllUserListByPage - ==> Parameters:  
+15:20:13.182 [main] DEBUG c.m.k.m.S.SelectAllUserListByPage - ==>  Preparing: SELECT su1.* FROM sys_user su1 LEFT JOIN sys_user su2 ON su1.master_user_id = su2.id WHERE su1.status = 1 AND su1.user_type IN (1,2) LIMIT 0,5  
+15:20:13.184 [main] DEBUG c.m.k.m.S.SelectAllUserListByPage - ==> Parameters:  
+15:20:13.187 [main] DEBUG c.m.k.m.S.SelectAllUserListByPage - <==      Total: 2 
+15:21:29.966 [main] INFO  c.m.kf100.mapper.SysUserMapperTest - Starting SysUserMapperTest on Kim-PC with PID 10500 (started by Administrator in D:\kf100) 
+15:21:29.966 [main] DEBUG c.m.kf100.mapper.SysUserMapperTest - Running with Spring Boot v1.5.14.RELEASE, Spring v4.3.18.RELEASE 
+15:21:29.967 [main] INFO  c.m.kf100.mapper.SysUserMapperTest - No active profile set, falling back to default profiles: default 
+15:21:32.335 [main] INFO  c.m.k.c.s.FilterChainDefinitionMapMetaSource - ShiroProperties{loginUrl='/page/admin/index.html#/login', successUrl='page/admin/index.html', unauthorizedUrl='page/admin/index.html#/404', FilterChainDefinitionMap={/static/**=anon, /page/download=anon, /page/h5/**=anon, /page/admin/**=anon, /api/admin/login=anon, /webjars/**=anon, /v2/api-docs=anon, /swagger-resources=anon, /doc.html=anon, /druid/**=anon, /=anon}} 
+15:21:34.660 [main] DEBUG c.m.k.m.S.selectList - ==>  Preparing: SELECT id AS id,`NAME` AS `name`,url,permissions,create_time AS createTime FROM sys_resource  
+15:21:34.803 [main] DEBUG c.m.k.m.S.selectList - ==> Parameters:  
+15:21:34.942 [main] DEBUG c.m.k.m.S.selectList - <==      Total: 7 
+15:21:34.943 [main] INFO  c.m.k.c.s.FilterChainDefinitionMapMetaSource - FilterChainDefinitionMap inited 
+15:21:34.943 [main] DEBUG c.m.k.c.shiro.StatelessShiroConfig - stateless shiroFilter init 
+15:21:38.400 [main] INFO  c.m.kf100.mapper.SysUserMapperTest - Started SysUserMapperTest in 9.245 seconds (JVM running for 10.118) 
+15:22:52.027 [main] INFO  c.m.kf100.mapper.SysUserMapperTest - Starting SysUserMapperTest on Kim-PC with PID 7744 (started by Administrator in D:\kf100) 
+15:22:52.028 [main] DEBUG c.m.kf100.mapper.SysUserMapperTest - Running with Spring Boot v1.5.14.RELEASE, Spring v4.3.18.RELEASE 
+15:22:52.028 [main] INFO  c.m.kf100.mapper.SysUserMapperTest - No active profile set, falling back to default profiles: default 
+15:22:54.152 [main] INFO  c.m.k.c.s.FilterChainDefinitionMapMetaSource - ShiroProperties{loginUrl='/page/admin/index.html#/login', successUrl='page/admin/index.html', unauthorizedUrl='page/admin/index.html#/404', FilterChainDefinitionMap={/static/**=anon, /page/download=anon, /page/h5/**=anon, /page/admin/**=anon, /api/admin/login=anon, /webjars/**=anon, /v2/api-docs=anon, /swagger-resources=anon, /doc.html=anon, /druid/**=anon, /=anon}} 
+15:22:56.528 [main] DEBUG c.m.k.m.S.selectList - ==>  Preparing: SELECT id AS id,`NAME` AS `name`,url,permissions,create_time AS createTime FROM sys_resource  
+15:22:56.663 [main] DEBUG c.m.k.m.S.selectList - ==> Parameters:  
+15:22:56.681 [main] DEBUG c.m.k.m.S.selectList - <==      Total: 7 
+15:22:56.682 [main] INFO  c.m.k.c.s.FilterChainDefinitionMapMetaSource - FilterChainDefinitionMap inited 
+15:22:56.682 [main] DEBUG c.m.k.c.shiro.StatelessShiroConfig - stateless shiroFilter init 
+15:22:59.842 [main] INFO  c.m.kf100.mapper.SysUserMapperTest - Started SysUserMapperTest in 8.528 seconds (JVM running for 9.448) 
+15:22:59.919 [main] DEBUG c.m.k.m.S.SelectAllUserListByPage - ==>  Preparing: SELECT COUNT(1) FROM ( SELECT su1.* FROM sys_user su1 LEFT JOIN sys_user su2 ON su1.master_user_id = su2.id WHERE su1.status = 1 AND su1.user_type IN (1,2) AND su1.user_name LIKE LIKE '%'?'%' ) TOTAL  
+15:22:59.947 [main] DEBUG c.m.k.m.S.SelectAllUserListByPage - ==>  Preparing: SELECT su1.* FROM sys_user su1 LEFT JOIN sys_user su2 ON su1.master_user_id = su2.id WHERE su1.status = 1 AND su1.user_type IN (1,2) AND su1.user_name LIKE LIKE '%'?'%'  
+15:24:52.578 [main] INFO  c.m.kf100.mapper.SysUserMapperTest - Starting SysUserMapperTest on Kim-PC with PID 10332 (started by Administrator in D:\kf100) 
+15:24:52.578 [main] DEBUG c.m.kf100.mapper.SysUserMapperTest - Running with Spring Boot v1.5.14.RELEASE, Spring v4.3.18.RELEASE 
+15:24:52.578 [main] INFO  c.m.kf100.mapper.SysUserMapperTest - No active profile set, falling back to default profiles: default 
+15:24:54.843 [main] INFO  c.m.k.c.s.FilterChainDefinitionMapMetaSource - ShiroProperties{loginUrl='/page/admin/index.html#/login', successUrl='page/admin/index.html', unauthorizedUrl='page/admin/index.html#/404', FilterChainDefinitionMap={/static/**=anon, /page/download=anon, /page/h5/**=anon, /page/admin/**=anon, /api/admin/login=anon, /webjars/**=anon, /v2/api-docs=anon, /swagger-resources=anon, /doc.html=anon, /druid/**=anon, /=anon}} 
+15:24:57.156 [main] DEBUG c.m.k.m.S.selectList - ==>  Preparing: SELECT id AS id,`NAME` AS `name`,url,permissions,create_time AS createTime FROM sys_resource  
+15:24:57.309 [main] DEBUG c.m.k.m.S.selectList - ==> Parameters:  
+15:24:57.328 [main] DEBUG c.m.k.m.S.selectList - <==      Total: 7 
+15:24:57.329 [main] INFO  c.m.k.c.s.FilterChainDefinitionMapMetaSource - FilterChainDefinitionMap inited 
+15:24:57.329 [main] DEBUG c.m.k.c.shiro.StatelessShiroConfig - stateless shiroFilter init 
+15:25:00.683 [main] INFO  c.m.kf100.mapper.SysUserMapperTest - Started SysUserMapperTest in 8.629 seconds (JVM running for 9.468) 
+15:25:00.761 [main] DEBUG c.m.k.m.S.SelectAllUserListByPage - ==>  Preparing: SELECT COUNT(1) FROM ( SELECT su1.* FROM sys_user su1 LEFT JOIN sys_user su2 ON su1.master_user_id = su2.id WHERE su1.status = 1 AND su1.user_type IN (1,2) AND su1.user_name LIKE LIKE '%?%' ) TOTAL  
+15:25:00.777 [main] DEBUG c.m.k.m.S.SelectAllUserListByPage - ==>  Preparing: SELECT su1.* FROM sys_user su1 LEFT JOIN sys_user su2 ON su1.master_user_id = su2.id WHERE su1.status = 1 AND su1.user_type IN (1,2) AND su1.user_name LIKE LIKE '%?%'  
+15:26:45.782 [main] INFO  c.m.kf100.mapper.SysUserMapperTest - Starting SysUserMapperTest on Kim-PC with PID 5292 (started by Administrator in D:\kf100) 
+15:26:45.783 [main] DEBUG c.m.kf100.mapper.SysUserMapperTest - Running with Spring Boot v1.5.14.RELEASE, Spring v4.3.18.RELEASE 
+15:26:45.783 [main] INFO  c.m.kf100.mapper.SysUserMapperTest - No active profile set, falling back to default profiles: default 
+15:26:47.425 [main] INFO  c.m.k.c.s.FilterChainDefinitionMapMetaSource - ShiroProperties{loginUrl='/page/admin/index.html#/login', successUrl='page/admin/index.html', unauthorizedUrl='page/admin/index.html#/404', FilterChainDefinitionMap={/static/**=anon, /page/download=anon, /page/h5/**=anon, /page/admin/**=anon, /api/admin/login=anon, /webjars/**=anon, /v2/api-docs=anon, /swagger-resources=anon, /doc.html=anon, /druid/**=anon, /=anon}} 
+15:26:49.721 [main] DEBUG c.m.k.m.S.selectList - ==>  Preparing: SELECT id AS id,`NAME` AS `name`,url,permissions,create_time AS createTime FROM sys_resource  
+15:26:49.883 [main] DEBUG c.m.k.m.S.selectList - ==> Parameters:  
+15:26:49.902 [main] DEBUG c.m.k.m.S.selectList - <==      Total: 7 
+15:26:49.904 [main] INFO  c.m.k.c.s.FilterChainDefinitionMapMetaSource - FilterChainDefinitionMap inited 
+15:26:49.904 [main] DEBUG c.m.k.c.shiro.StatelessShiroConfig - stateless shiroFilter init 
+15:26:53.190 [main] INFO  c.m.kf100.mapper.SysUserMapperTest - Started SysUserMapperTest in 8.282 seconds (JVM running for 9.096) 
+15:26:53.280 [main] DEBUG c.m.k.m.S.SelectAllUserListByPage - ==>  Preparing: SELECT COUNT(1) FROM ( SELECT su1.* FROM sys_user su1 LEFT JOIN sys_user su2 ON su1.master_user_id = su2.id WHERE su1.status = 1 AND su1.user_type IN (1,2) AND su1.user_name LIKE '%'黄主任'%' ) TOTAL  
+15:26:53.307 [main] DEBUG c.m.k.m.S.SelectAllUserListByPage - ==>  Preparing: SELECT su1.* FROM sys_user su1 LEFT JOIN sys_user su2 ON su1.master_user_id = su2.id WHERE su1.status = 1 AND su1.user_type IN (1,2) AND su1.user_name LIKE '%'黄主任'%'  
+15:27:14.481 [main] INFO  c.m.kf100.mapper.SysUserMapperTest - Starting SysUserMapperTest on Kim-PC with PID 10736 (started by Administrator in D:\kf100) 
+15:27:14.482 [main] DEBUG c.m.kf100.mapper.SysUserMapperTest - Running with Spring Boot v1.5.14.RELEASE, Spring v4.3.18.RELEASE 
+15:27:14.482 [main] INFO  c.m.kf100.mapper.SysUserMapperTest - No active profile set, falling back to default profiles: default 
+15:27:16.873 [main] INFO  c.m.k.c.s.FilterChainDefinitionMapMetaSource - ShiroProperties{loginUrl='/page/admin/index.html#/login', successUrl='page/admin/index.html', unauthorizedUrl='page/admin/index.html#/404', FilterChainDefinitionMap={/static/**=anon, /page/download=anon, /page/h5/**=anon, /page/admin/**=anon, /api/admin/login=anon, /webjars/**=anon, /v2/api-docs=anon, /swagger-resources=anon, /doc.html=anon, /druid/**=anon, /=anon}} 
+15:27:19.607 [main] DEBUG c.m.k.m.S.selectList - ==>  Preparing: SELECT id AS id,`NAME` AS `name`,url,permissions,create_time AS createTime FROM sys_resource  
+15:27:19.739 [main] DEBUG c.m.k.m.S.selectList - ==> Parameters:  
+15:27:19.758 [main] DEBUG c.m.k.m.S.selectList - <==      Total: 7 
+15:27:19.759 [main] INFO  c.m.k.c.s.FilterChainDefinitionMapMetaSource - FilterChainDefinitionMap inited 
+15:27:19.759 [main] DEBUG c.m.k.c.shiro.StatelessShiroConfig - stateless shiroFilter init 
+15:27:23.197 [main] INFO  c.m.kf100.mapper.SysUserMapperTest - Started SysUserMapperTest in 9.24 seconds (JVM running for 10.106) 
+15:27:23.288 [main] DEBUG c.m.k.m.S.SelectAllUserListByPage - ==>  Preparing: SELECT COUNT(1) FROM sys_user su1 LEFT JOIN sys_user su2 ON su1.master_user_id = su2.id WHERE su1.status = 1 AND su1.user_type IN (1, 2) AND su1.user_name LIKE '%黄主任%'  
+15:27:23.319 [main] DEBUG c.m.k.m.S.SelectAllUserListByPage - ==> Parameters:  
+15:27:23.331 [main] DEBUG c.m.k.m.S.SelectAllUserListByPage - ==>  Preparing: SELECT su1.* FROM sys_user su1 LEFT JOIN sys_user su2 ON su1.master_user_id = su2.id WHERE su1.status = 1 AND su1.user_type IN (1,2) AND su1.user_name LIKE '%黄主任%' LIMIT 0,5  
+15:27:23.333 [main] DEBUG c.m.k.m.S.SelectAllUserListByPage - ==> Parameters:  
+15:27:23.336 [main] DEBUG c.m.k.m.S.SelectAllUserListByPage - <==      Total: 1 
+15:28:31.595 [main] INFO  c.m.kf100.mapper.SysUserMapperTest - Starting SysUserMapperTest on Kim-PC with PID 9264 (started by Administrator in D:\kf100) 
+15:28:31.596 [main] DEBUG c.m.kf100.mapper.SysUserMapperTest - Running with Spring Boot v1.5.14.RELEASE, Spring v4.3.18.RELEASE 
+15:28:31.596 [main] INFO  c.m.kf100.mapper.SysUserMapperTest - No active profile set, falling back to default profiles: default 
+15:28:33.692 [main] INFO  c.m.k.c.s.FilterChainDefinitionMapMetaSource - ShiroProperties{loginUrl='/page/admin/index.html#/login', successUrl='page/admin/index.html', unauthorizedUrl='page/admin/index.html#/404', FilterChainDefinitionMap={/static/**=anon, /page/download=anon, /page/h5/**=anon, /page/admin/**=anon, /api/admin/login=anon, /webjars/**=anon, /v2/api-docs=anon, /swagger-resources=anon, /doc.html=anon, /druid/**=anon, /=anon}} 
+15:28:36.217 [main] DEBUG c.m.k.m.S.selectList - ==>  Preparing: SELECT id AS id,`NAME` AS `name`,url,permissions,create_time AS createTime FROM sys_resource  
+15:28:36.374 [main] DEBUG c.m.k.m.S.selectList - ==> Parameters:  
+15:28:36.393 [main] DEBUG c.m.k.m.S.selectList - <==      Total: 7 
+15:28:36.395 [main] INFO  c.m.k.c.s.FilterChainDefinitionMapMetaSource - FilterChainDefinitionMap inited 
+15:28:36.395 [main] DEBUG c.m.k.c.shiro.StatelessShiroConfig - stateless shiroFilter init 
+15:28:39.816 [main] INFO  c.m.kf100.mapper.SysUserMapperTest - Started SysUserMapperTest in 8.78 seconds (JVM running for 9.604) 
+15:28:39.910 [main] DEBUG c.m.k.m.S.SelectAllUserListByPage - ==>  Preparing: SELECT COUNT(1) FROM sys_user su1 LEFT JOIN sys_user su2 ON su1.master_user_id = su2.id WHERE su1.status = 1 AND su1.user_type IN (1, 2) AND su1.account LIKE '%zhujiao%'  
+15:28:39.938 [main] DEBUG c.m.k.m.S.SelectAllUserListByPage - ==> Parameters:  
+15:28:39.943 [main] DEBUG c.m.k.m.S.SelectAllUserListByPage - ==>  Preparing: SELECT su1.* FROM sys_user su1 LEFT JOIN sys_user su2 ON su1.master_user_id = su2.id WHERE su1.status = 1 AND su1.user_type IN (1,2) AND su1.account LIKE '%zhujiao%' LIMIT 0,5  
+15:28:39.945 [main] DEBUG c.m.k.m.S.SelectAllUserListByPage - ==> Parameters:  
+15:28:39.949 [main] DEBUG c.m.k.m.S.SelectAllUserListByPage - <==      Total: 1 
+16:28:11.714 [main] INFO  c.m.k.s.impl.SysUserServiceImplTest - Starting SysUserServiceImplTest on Kim-PC with PID 1124 (started by Administrator in D:\kf100) 
+16:28:11.724 [main] DEBUG c.m.k.s.impl.SysUserServiceImplTest - Running with Spring Boot v1.5.14.RELEASE, Spring v4.3.18.RELEASE 
+16:28:11.724 [main] INFO  c.m.k.s.impl.SysUserServiceImplTest - No active profile set, falling back to default profiles: default 
+16:28:13.745 [main] INFO  c.m.k.c.s.FilterChainDefinitionMapMetaSource - ShiroProperties{loginUrl='/page/admin/index.html#/login', successUrl='page/admin/index.html', unauthorizedUrl='page/admin/index.html#/404', FilterChainDefinitionMap={/static/**=anon, /page/download=anon, /page/h5/**=anon, /page/admin/**=anon, /api/admin/login=anon, /webjars/**=anon, /v2/api-docs=anon, /swagger-resources=anon, /doc.html=anon, /druid/**=anon, /=anon}} 
+16:28:16.230 [main] DEBUG c.m.k.m.S.selectList - ==>  Preparing: SELECT id AS id,`NAME` AS `name`,url,permissions,create_time AS createTime FROM sys_resource  
+16:28:16.390 [main] DEBUG c.m.k.m.S.selectList - ==> Parameters:  
+16:28:16.408 [main] DEBUG c.m.k.m.S.selectList - <==      Total: 7 
+16:28:16.409 [main] INFO  c.m.k.c.s.FilterChainDefinitionMapMetaSource - FilterChainDefinitionMap inited 
+16:28:16.409 [main] DEBUG c.m.k.c.shiro.StatelessShiroConfig - stateless shiroFilter init 
+16:28:19.851 [main] INFO  c.m.k.s.impl.SysUserServiceImplTest - Started SysUserServiceImplTest in 8.849 seconds (JVM running for 9.845) 
+16:32:48.404 [main] INFO  c.m.k.s.impl.SysUserServiceImplTest - Starting SysUserServiceImplTest on Kim-PC with PID 11880 (started by Administrator in D:\kf100) 
+16:32:48.405 [main] DEBUG c.m.k.s.impl.SysUserServiceImplTest - Running with Spring Boot v1.5.14.RELEASE, Spring v4.3.18.RELEASE 
+16:32:48.405 [main] INFO  c.m.k.s.impl.SysUserServiceImplTest - No active profile set, falling back to default profiles: default 
+16:32:50.185 [main] INFO  c.m.k.c.s.FilterChainDefinitionMapMetaSource - ShiroProperties{loginUrl='/page/admin/index.html#/login', successUrl='page/admin/index.html', unauthorizedUrl='page/admin/index.html#/404', FilterChainDefinitionMap={/static/**=anon, /page/download=anon, /page/h5/**=anon, /page/admin/**=anon, /api/admin/login=anon, /webjars/**=anon, /v2/api-docs=anon, /swagger-resources=anon, /doc.html=anon, /druid/**=anon, /=anon}} 
+16:32:52.511 [main] DEBUG c.m.k.m.S.selectList - ==>  Preparing: SELECT id AS id,`NAME` AS `name`,url,permissions,create_time AS createTime FROM sys_resource  
+16:32:52.634 [main] DEBUG c.m.k.m.S.selectList - ==> Parameters:  
+16:32:52.652 [main] DEBUG c.m.k.m.S.selectList - <==      Total: 7 
+16:32:52.653 [main] INFO  c.m.k.c.s.FilterChainDefinitionMapMetaSource - FilterChainDefinitionMap inited 
+16:32:52.653 [main] DEBUG c.m.k.c.shiro.StatelessShiroConfig - stateless shiroFilter init 
+16:32:55.945 [main] INFO  c.m.k.s.impl.SysUserServiceImplTest - Started SysUserServiceImplTest in 8.261 seconds (JVM running for 9.126) 
+16:32:56.268 [main] DEBUG c.m.k.m.S.SelectAllUserListByPage - ==>  Preparing: SELECT COUNT(1) FROM sys_user su1 LEFT JOIN sys_user su2 ON su1.master_user_id = su2.id WHERE su1.status = 1 AND su1.user_type IN (1, 2) AND su1.email = ?  
+16:32:56.300 [main] DEBUG c.m.k.m.S.SelectAllUserListByPage - ==> Parameters: 88888@qq.com(String) 
+16:32:56.322 [main] DEBUG c.m.k.m.S.SelectAllUserListByPage - ==>  Preparing: SELECT su1.* FROM sys_user su1 LEFT JOIN sys_user su2 ON su1.master_user_id = su2.id WHERE su1.status = 1 AND su1.user_type IN (1,2) AND su1.email =? LIMIT 0,6  
+16:32:56.324 [main] DEBUG c.m.k.m.S.SelectAllUserListByPage - ==> Parameters: 88888@qq.com(String) 
+16:32:56.327 [main] DEBUG c.m.k.m.S.SelectAllUserListByPage - <==      Total: 1 
+16:37:43.344 [restartedMain] INFO  com.medhead.kf100.Kf100Application - Starting Kf100Application on Kim-PC with PID 11004 (D:\kf100\target\classes started by Administrator in D:\kf100) 
+16:37:43.345 [restartedMain] DEBUG com.medhead.kf100.Kf100Application - Running with Spring Boot v1.5.14.RELEASE, Spring v4.3.18.RELEASE 
+16:37:43.345 [restartedMain] INFO  com.medhead.kf100.Kf100Application - No active profile set, falling back to default profiles: default 
+16:37:44.668 [restartedMain] INFO  c.m.k.c.s.FilterChainDefinitionMapMetaSource - ShiroProperties{loginUrl='/page/admin/index.html#/login', successUrl='page/admin/index.html', unauthorizedUrl='page/admin/index.html#/404', FilterChainDefinitionMap={/static/**=anon, /page/download=anon, /page/h5/**=anon, /page/admin/**=anon, /api/admin/login=anon, /webjars/**=anon, /v2/api-docs=anon, /swagger-resources=anon, /doc.html=anon, /druid/**=anon, /=anon}} 
+16:37:46.459 [restartedMain] DEBUG c.m.k.m.S.selectList - ==>  Preparing: SELECT id AS id,`NAME` AS `name`,url,permissions,create_time AS createTime FROM sys_resource  
+16:37:46.658 [restartedMain] DEBUG c.m.k.m.S.selectList - ==> Parameters:  
+16:37:46.672 [restartedMain] DEBUG c.m.k.m.S.selectList - <==      Total: 7 
+16:37:46.673 [restartedMain] INFO  c.m.k.c.s.FilterChainDefinitionMapMetaSource - FilterChainDefinitionMap inited 
+16:37:46.674 [restartedMain] DEBUG c.m.k.c.shiro.StatelessShiroConfig - stateless shiroFilter init 
+16:37:50.947 [restartedMain] INFO  com.medhead.kf100.Kf100Application - Started Kf100Application in 8.129 seconds (JVM running for 9.456) 
+16:39:21.885 [http-nio-8080-exec-2] DEBUG c.m.k.m.SysUserMapper.selectList - ==>  Preparing: SELECT id AS id,user_name AS userName,account,cell_phone AS cellPhone,email,create_time AS createTime,pass_word AS `passWord`,master_user_id AS masterUserId,purchase_status AS purchaseStatus,`status`,user_type AS userType,account_type AS accountType,address,corporation_name AS corporationName,company_name AS companyName,company_address AS companyAddress,business_license_number AS businessLicenseNumber,auth_image AS authImage FROM sys_user WHERE account=? AND `status`=? AND user_type=?  
+16:39:21.904 [http-nio-8080-exec-2] DEBUG c.m.k.m.SysUserMapper.selectList - ==> Parameters: admin(String), 1(Integer), 3(Integer) 
+16:39:21.907 [http-nio-8080-exec-2] DEBUG c.m.k.m.SysUserMapper.selectList - <==      Total: 0 
+16:41:27.862 [http-nio-8080-exec-4] DEBUG c.m.k.m.SysUserMapper.selectList - ==>  Preparing: SELECT id AS id,user_name AS userName,account,cell_phone AS cellPhone,email,create_time AS createTime,pass_word AS `passWord`,master_user_id AS masterUserId,purchase_status AS purchaseStatus,`status`,user_type AS userType,account_type AS accountType,address,corporation_name AS corporationName,company_name AS companyName,company_address AS companyAddress,business_license_number AS businessLicenseNumber,auth_image AS authImage FROM sys_user WHERE account=? AND `status`=? AND user_type=?  
+16:41:27.863 [http-nio-8080-exec-4] DEBUG c.m.k.m.SysUserMapper.selectList - ==> Parameters: ming(String), 1(Integer), 3(Integer) 
+16:41:27.866 [http-nio-8080-exec-4] DEBUG c.m.k.m.SysUserMapper.selectList - <==      Total: 1 
+16:41:27.910 [http-nio-8080-exec-4] DEBUG c.m.kf100.mapper.TokenMapper.delete - ==>  Preparing: DELETE FROM token WHERE user_id=?  
+16:41:27.932 [http-nio-8080-exec-4] DEBUG c.m.kf100.mapper.TokenMapper.delete - ==> Parameters: 1(Long) 
+16:41:27.940 [http-nio-8080-exec-4] DEBUG c.m.kf100.mapper.TokenMapper.delete - <==    Updates: 1 
+16:41:27.962 [http-nio-8080-exec-4] DEBUG c.m.kf100.mapper.TokenMapper.insert - ==>  Preparing: INSERT INTO token ( create_time, user_id, expire_time ) VALUES ( ?, ?, ? )  
+16:41:27.967 [http-nio-8080-exec-4] DEBUG c.m.kf100.mapper.TokenMapper.insert - ==> Parameters: 2018-11-28 16:41:27.959(Timestamp), 1(Long), 2018-12-05 16:41:27.959(Timestamp) 
+16:41:27.981 [http-nio-8080-exec-4] DEBUG c.m.kf100.mapper.TokenMapper.insert - <==    Updates: 1 
+16:41:28.007 [http-nio-8080-exec-4] DEBUG c.m.k.m.S.findAllPermissionByUserId - ==>  Preparing: SELECT DISTINCT R.permissions FROM SYS_RESOURCE R, (SELECT RESOURCE_IDS FROM SYS_USER U LEFT JOIN SYS_USER_ROLE UR ON U.ID = UR.USER_ID LEFT JOIN SYS_ROLE R ON R.ID = UR.ROLE_ID WHERE U.ID = ?) TEMP WHERE FIND_IN_SET(R.ID, TEMP.RESOURCE_IDS)  
+16:41:28.012 [http-nio-8080-exec-4] DEBUG c.m.k.m.S.findAllPermissionByUserId - ==> Parameters: 1(Long) 
+16:41:28.022 [http-nio-8080-exec-4] DEBUG c.m.k.m.S.findAllPermissionByUserId - <==      Total: 7 
+16:45:43.940 [http-nio-8080-exec-5] DEBUG c.m.k.c.s.filter.ShiroAuthcFilter - eyJhbGciOiJIUzI1NiIsInppcCI6IkdaSVAifQ.H4sIAAAAAAAAAFWMwQ6DIBBE_2XPXKxUC3-z4qalgZWwktQ0_fdi6UFv815m5g3P1YOFYRg1KJAyVehq8iI1YQge2dEucAXbXXXfG61vowJ6pSaMMZddJMrxN5qjZ7vkmbKtB6pxkRNGZLz_jUP3oJNpHbeULHQQmFLYDjwhc1vA5wtoIVQDygAAAA.R_egZfH__ajzhEjBc7hJxJlkwaRWVZqITWmuK5P85N4 
+16:45:43.940 [http-nio-8080-exec-5] DEBUG c.m.k.c.s.filter.ShiroAuthcFilter - 0:0:0:0:0:0:0:1 
+16:45:43.941 [http-nio-8080-exec-5] INFO  c.m.kf100.conf.shiro.realm.JwtRealm - jwtRealm 认证..... 
+16:45:44.051 [http-nio-8080-exec-5] DEBUG c.m.k.mapper.TokenMapper.selectById - ==>  Preparing: SELECT id AS id,create_time AS createTime,user_id AS userId,expire_time AS expireTime FROM token WHERE id=?  
+16:45:44.051 [http-nio-8080-exec-5] DEBUG c.m.k.mapper.TokenMapper.selectById - ==> Parameters: 6674(Long) 
+16:45:44.054 [http-nio-8080-exec-5] DEBUG c.m.k.mapper.TokenMapper.selectById - <==      Total: 0 
+16:45:44.057 [http-nio-8080-exec-5] INFO  c.m.k.c.s.filter.ShiroAuthcFilter - org.apache.shiro.authc.AuthenticationException: JWT 令牌无效:令牌已被移除 
+16:45:58.513 [http-nio-8080-exec-4] DEBUG c.m.k.m.SysUserMapper.selectList - ==>  Preparing: SELECT id AS id,user_name AS userName,account,cell_phone AS cellPhone,email,create_time AS createTime,pass_word AS `passWord`,master_user_id AS masterUserId,purchase_status AS purchaseStatus,`status`,user_type AS userType,account_type AS accountType,address,corporation_name AS corporationName,company_name AS companyName,company_address AS companyAddress,business_license_number AS businessLicenseNumber,auth_image AS authImage FROM sys_user WHERE account=? AND `status`=? AND user_type=?  
+16:45:58.514 [http-nio-8080-exec-4] DEBUG c.m.k.m.SysUserMapper.selectList - ==> Parameters: ming(String), 1(Integer), 3(Integer) 
+16:45:58.516 [http-nio-8080-exec-4] DEBUG c.m.k.m.SysUserMapper.selectList - <==      Total: 1 
+16:45:58.518 [http-nio-8080-exec-4] DEBUG c.m.kf100.mapper.TokenMapper.delete - ==>  Preparing: DELETE FROM token WHERE user_id=?  
+16:45:58.519 [http-nio-8080-exec-4] DEBUG c.m.kf100.mapper.TokenMapper.delete - ==> Parameters: 1(Long) 
+16:45:58.529 [http-nio-8080-exec-4] DEBUG c.m.kf100.mapper.TokenMapper.delete - <==    Updates: 1 
+16:45:58.547 [http-nio-8080-exec-4] DEBUG c.m.kf100.mapper.TokenMapper.insert - ==>  Preparing: INSERT INTO token ( create_time, user_id, expire_time ) VALUES ( ?, ?, ? )  
+16:45:58.548 [http-nio-8080-exec-4] DEBUG c.m.kf100.mapper.TokenMapper.insert - ==> Parameters: 2018-11-28 16:45:58.545(Timestamp), 1(Long), 2018-12-05 16:45:58.545(Timestamp) 
+16:45:58.560 [http-nio-8080-exec-4] DEBUG c.m.kf100.mapper.TokenMapper.insert - <==    Updates: 1 
+16:45:58.585 [http-nio-8080-exec-4] DEBUG c.m.k.m.S.findAllPermissionByUserId - ==>  Preparing: SELECT DISTINCT R.permissions FROM SYS_RESOURCE R, (SELECT RESOURCE_IDS FROM SYS_USER U LEFT JOIN SYS_USER_ROLE UR ON U.ID = UR.USER_ID LEFT JOIN SYS_ROLE R ON R.ID = UR.ROLE_ID WHERE U.ID = ?) TEMP WHERE FIND_IN_SET(R.ID, TEMP.RESOURCE_IDS)  
+16:45:58.585 [http-nio-8080-exec-4] DEBUG c.m.k.m.S.findAllPermissionByUserId - ==> Parameters: 1(Long) 
+16:45:58.587 [http-nio-8080-exec-4] DEBUG c.m.k.m.S.findAllPermissionByUserId - <==      Total: 7 
+16:46:06.613 [http-nio-8080-exec-6] DEBUG c.m.k.c.s.filter.ShiroAuthcFilter - eyJhbGciOiJIUzI1NiIsInppcCI6IkdaSVAifQ.H4sIAAAAAAAAAFWMwQ6DIBBE_2XPXIyChb9ZcVNpAAkrSRvTfy8WD3qb9zIzO7w2BwaUGhUI4DJV6GpyzDWh9w6jpUPgBqaTQ9_rYZQPAfROTWit5SES5fAfzcFFs-aZsqkHonHhGwaM-DyNRbvQzbSOXUtmughMyX8uPGGMbQHfH_4Zmc7KAAAA.ZisrNRqGK_0aMlwLbCWQZbrPYOnbUng3U-y14sj_Cwo 
+16:46:06.613 [http-nio-8080-exec-6] DEBUG c.m.k.c.s.filter.ShiroAuthcFilter - 0:0:0:0:0:0:0:1 
+16:46:06.613 [http-nio-8080-exec-6] INFO  c.m.kf100.conf.shiro.realm.JwtRealm - jwtRealm 认证..... 
+16:46:06.619 [http-nio-8080-exec-6] DEBUG c.m.k.mapper.TokenMapper.selectById - ==>  Preparing: SELECT id AS id,create_time AS createTime,user_id AS userId,expire_time AS expireTime FROM token WHERE id=?  
+16:46:06.622 [http-nio-8080-exec-6] DEBUG c.m.k.mapper.TokenMapper.selectById - ==> Parameters: 6676(Long) 
+16:46:06.625 [http-nio-8080-exec-6] DEBUG c.m.k.mapper.TokenMapper.selectById - <==      Total: 1 
+16:46:06.658 [http-nio-8080-exec-6] DEBUG c.m.k.m.S.selectAllUserListByPage - ==>  Preparing: SELECT COUNT(1) FROM sys_user su1 LEFT JOIN sys_user su2 ON su1.master_user_id = su2.id WHERE su1.status = 1 AND su1.user_type IN (1, 2)  
+16:46:06.661 [http-nio-8080-exec-6] DEBUG c.m.k.m.S.selectAllUserListByPage - ==> Parameters:  
+16:46:06.666 [http-nio-8080-exec-6] DEBUG c.m.k.m.S.selectAllUserListByPage - ==>  Preparing: SELECT su1.* FROM sys_user su1 LEFT JOIN sys_user su2 ON su1.master_user_id = su2.id WHERE su1.status = 1 AND su1.user_type IN (1,2) LIMIT 0,6  
+16:46:06.667 [http-nio-8080-exec-6] DEBUG c.m.k.m.S.selectAllUserListByPage - ==> Parameters:  
+16:46:06.670 [http-nio-8080-exec-6] DEBUG c.m.k.m.S.selectAllUserListByPage - <==      Total: 2 
+17:31:53.332 [restartedMain] INFO  com.medhead.kf100.Kf100Application - Starting Kf100Application on Kim-PC with PID 9776 (D:\kf100\target\classes started by Administrator in D:\kf100) 
+17:31:53.333 [restartedMain] DEBUG com.medhead.kf100.Kf100Application - Running with Spring Boot v1.5.14.RELEASE, Spring v4.3.18.RELEASE 
+17:31:53.333 [restartedMain] INFO  com.medhead.kf100.Kf100Application - No active profile set, falling back to default profiles: default 
+17:31:54.755 [restartedMain] INFO  c.m.k.c.s.FilterChainDefinitionMapMetaSource - ShiroProperties{loginUrl='/page/admin/index.html#/login', successUrl='page/admin/index.html', unauthorizedUrl='page/admin/index.html#/404', FilterChainDefinitionMap={/static/**=anon, /page/download=anon, /page/h5/**=anon, /page/admin/**=anon, /api/admin/login=anon, /webjars/**=anon, /v2/api-docs=anon, /swagger-resources=anon, /doc.html=anon, /druid/**=anon, /=anon}} 
+17:31:56.617 [restartedMain] DEBUG c.m.k.m.S.selectList - ==>  Preparing: SELECT id AS id,`NAME` AS `name`,url,permissions,create_time AS createTime FROM sys_resource  
+17:31:56.820 [restartedMain] DEBUG c.m.k.m.S.selectList - ==> Parameters:  
+17:31:56.835 [restartedMain] DEBUG c.m.k.m.S.selectList - <==      Total: 7 
+17:31:56.837 [restartedMain] INFO  c.m.k.c.s.FilterChainDefinitionMapMetaSource - FilterChainDefinitionMap inited 
+17:31:56.837 [restartedMain] DEBUG c.m.k.c.shiro.StatelessShiroConfig - stateless shiroFilter init 
+17:32:00.496 [restartedMain] INFO  com.medhead.kf100.Kf100Application - Started Kf100Application in 7.54 seconds (JVM running for 8.465) 
+17:32:04.444 [http-nio-8080-exec-2] DEBUG c.m.k.c.s.filter.ShiroAuthcFilter - eyJhbGciOiJIUzI1NiIsInppcCI6IkdaSVAifQ.H4sIAAAAAAAAAFWMwQ6DIBBE_2XPXIyChb9ZcVNpAAkrSRvTfy8WD3qb9zIzO7w2BwaUGhUI4DJV6GpyzDWh9w6jpUPgBqaTQ9_rYZQPAfROTWit5SES5fAfzcFFs-aZsqkHonHhGwaM-DyNRbvQzbSOXUtmughMyX8uPGGMbQHfH_4Zmc7KAAAA.ZisrNRqGK_0aMlwLbCWQZbrPYOnbUng3U-y14sj_Cwo 
+17:32:04.444 [http-nio-8080-exec-2] DEBUG c.m.k.c.s.filter.ShiroAuthcFilter - 0:0:0:0:0:0:0:1 
+17:32:04.445 [http-nio-8080-exec-2] INFO  c.m.kf100.conf.shiro.realm.JwtRealm - jwtRealm 认证..... 
+17:32:04.646 [http-nio-8080-exec-2] DEBUG c.m.k.mapper.TokenMapper.selectById - ==>  Preparing: SELECT id AS id,create_time AS createTime,user_id AS userId,expire_time AS expireTime FROM token WHERE id=?  
+17:32:04.663 [http-nio-8080-exec-2] DEBUG c.m.k.mapper.TokenMapper.selectById - ==> Parameters: 6676(Long) 
+17:32:04.665 [http-nio-8080-exec-2] DEBUG c.m.k.mapper.TokenMapper.selectById - <==      Total: 0 
+17:32:04.668 [http-nio-8080-exec-2] INFO  c.m.k.c.s.filter.ShiroAuthcFilter - org.apache.shiro.authc.AuthenticationException: JWT 令牌无效:令牌已被移除 
+17:32:07.277 [http-nio-8080-exec-3] DEBUG c.m.k.m.SysUserMapper.selectList - ==>  Preparing: SELECT id AS id,user_name AS userName,account,cell_phone AS cellPhone,email,create_time AS createTime,pass_word AS `passWord`,master_user_id AS masterUserId,purchase_status AS purchaseStatus,`status`,user_type AS userType,account_type AS accountType,address,corporation_name AS corporationName,company_name AS companyName,company_address AS companyAddress,business_license_number AS businessLicenseNumber,auth_image AS authImage FROM sys_user WHERE account=? AND `status`=? AND user_type=?  
+17:32:07.281 [http-nio-8080-exec-3] DEBUG c.m.k.m.SysUserMapper.selectList - ==> Parameters: ming(String), 1(Integer), 3(Integer) 
+17:32:07.284 [http-nio-8080-exec-3] DEBUG c.m.k.m.SysUserMapper.selectList - <==      Total: 1 
+17:32:07.298 [http-nio-8080-exec-3] DEBUG c.m.kf100.mapper.TokenMapper.delete - ==>  Preparing: DELETE FROM token WHERE user_id=?  
+17:32:07.300 [http-nio-8080-exec-3] DEBUG c.m.kf100.mapper.TokenMapper.delete - ==> Parameters: 1(Long) 
+17:32:07.310 [http-nio-8080-exec-3] DEBUG c.m.kf100.mapper.TokenMapper.delete - <==    Updates: 1 
+17:32:07.335 [http-nio-8080-exec-3] DEBUG c.m.kf100.mapper.TokenMapper.insert - ==>  Preparing: INSERT INTO token ( create_time, user_id, expire_time ) VALUES ( ?, ?, ? )  
+17:32:07.338 [http-nio-8080-exec-3] DEBUG c.m.kf100.mapper.TokenMapper.insert - ==> Parameters: 2018-11-28 17:32:07.332(Timestamp), 1(Long), 2018-12-05 17:32:07.332(Timestamp) 
+17:32:07.346 [http-nio-8080-exec-3] DEBUG c.m.kf100.mapper.TokenMapper.insert - <==    Updates: 1 
+17:32:07.505 [http-nio-8080-exec-3] DEBUG c.m.k.m.S.findAllPermissionByUserId - ==>  Preparing: SELECT DISTINCT R.permissions FROM SYS_RESOURCE R, (SELECT RESOURCE_IDS FROM SYS_USER U LEFT JOIN SYS_USER_ROLE UR ON U.ID = UR.USER_ID LEFT JOIN SYS_ROLE R ON R.ID = UR.ROLE_ID WHERE U.ID = ?) TEMP WHERE FIND_IN_SET(R.ID, TEMP.RESOURCE_IDS)  
+17:32:07.511 [http-nio-8080-exec-3] DEBUG c.m.k.m.S.findAllPermissionByUserId - ==> Parameters: 1(Long) 
+17:32:07.514 [http-nio-8080-exec-3] DEBUG c.m.k.m.S.findAllPermissionByUserId - <==      Total: 7 
+17:32:21.010 [http-nio-8080-exec-4] DEBUG c.m.k.c.s.filter.ShiroAuthcFilter - eyJhbGciOiJIUzI1NiIsInppcCI6IkdaSVAifQ.H4sIAAAAAAAAAFWMwQ6DIBBE_2XPHFRUWv5mxU1LA0hYSWya_ntRetDbvJeZ-cBrtaBhHNUNBHCeCrQlWeaS0DmLwdAucAXdDr2UdzV0SgBt8RB903RyF5GSP0azt0Evaaaky4GonPmCHgM-_sagedLF1I5ZcmI6CYzRvU88YQh1Ad8fhrxfZMoAAAA.lsj15hiakFFYuv8KmZe725GYgJbS1jbkf5N6Q5u-HQE 
+17:32:21.010 [http-nio-8080-exec-4] DEBUG c.m.k.c.s.filter.ShiroAuthcFilter - 0:0:0:0:0:0:0:1 
+17:32:21.010 [http-nio-8080-exec-4] INFO  c.m.kf100.conf.shiro.realm.JwtRealm - jwtRealm 认证..... 
+17:32:21.013 [http-nio-8080-exec-4] DEBUG c.m.k.mapper.TokenMapper.selectById - ==>  Preparing: SELECT id AS id,create_time AS createTime,user_id AS userId,expire_time AS expireTime FROM token WHERE id=?  
+17:32:21.013 [http-nio-8080-exec-4] DEBUG c.m.k.mapper.TokenMapper.selectById - ==> Parameters: 6678(Long) 
+17:32:21.015 [http-nio-8080-exec-4] DEBUG c.m.k.mapper.TokenMapper.selectById - <==      Total: 1 
+17:32:21.041 [http-nio-8080-exec-4] DEBUG c.m.k.m.S.selectAllUserListByPage - ==>  Preparing: SELECT COUNT(1) FROM sys_user su1 LEFT JOIN sys_user su2 ON su1.master_user_id = su2.id WHERE su1.status = 1 AND su1.user_type IN (1, 2)  
+17:32:21.044 [http-nio-8080-exec-4] DEBUG c.m.k.m.S.selectAllUserListByPage - ==> Parameters:  
+17:32:21.048 [http-nio-8080-exec-4] DEBUG c.m.k.m.S.selectAllUserListByPage - ==>  Preparing: SELECT su1.id,su1.user_name, su1.account,su1.account_type,su1.user_type,su1.create_time FROM sys_user su1 LEFT JOIN sys_user su2 ON su1.master_user_id = su2.id WHERE su1.status = 1 AND su1.user_type IN (1,2) LIMIT 0,6  
+17:32:21.049 [http-nio-8080-exec-4] DEBUG c.m.k.m.S.selectAllUserListByPage - ==> Parameters:  
+17:32:21.051 [http-nio-8080-exec-4] DEBUG c.m.k.m.S.selectAllUserListByPage - <==      Total: 2 
+17:47:26.921 [restartedMain] INFO  com.medhead.kf100.Kf100Application - Starting Kf100Application on Kim-PC with PID 12520 (D:\kf100\target\classes started by Administrator in D:\kf100) 
+17:47:26.922 [restartedMain] DEBUG com.medhead.kf100.Kf100Application - Running with Spring Boot v1.5.14.RELEASE, Spring v4.3.18.RELEASE 
+17:47:26.922 [restartedMain] INFO  com.medhead.kf100.Kf100Application - No active profile set, falling back to default profiles: default 
+17:47:28.335 [restartedMain] INFO  c.m.k.c.s.FilterChainDefinitionMapMetaSource - ShiroProperties{loginUrl='/page/admin/index.html#/login', successUrl='page/admin/index.html', unauthorizedUrl='page/admin/index.html#/404', FilterChainDefinitionMap={/static/**=anon, /page/download=anon, /page/h5/**=anon, /page/admin/**=anon, /api/admin/login=anon, /webjars/**=anon, /v2/api-docs=anon, /swagger-resources=anon, /doc.html=anon, /druid/**=anon, /=anon}} 
+17:47:30.215 [restartedMain] DEBUG c.m.k.m.S.selectList - ==>  Preparing: SELECT id AS id,`NAME` AS `name`,url,permissions,create_time AS createTime FROM sys_resource  
+17:47:30.437 [restartedMain] DEBUG c.m.k.m.S.selectList - ==> Parameters:  
+17:47:30.453 [restartedMain] DEBUG c.m.k.m.S.selectList - <==      Total: 7 
+17:47:30.454 [restartedMain] INFO  c.m.k.c.s.FilterChainDefinitionMapMetaSource - FilterChainDefinitionMap inited 
+17:47:30.455 [restartedMain] DEBUG c.m.k.c.shiro.StatelessShiroConfig - stateless shiroFilter init 
+17:47:34.266 [restartedMain] INFO  com.medhead.kf100.Kf100Application - Started Kf100Application in 7.906 seconds (JVM running for 8.72) 
+17:47:34.922 [http-nio-8080-exec-1] DEBUG c.m.k.c.s.filter.ShiroAuthcFilter - eyJhbGciOiJIUzI1NiIsInppcCI6IkdaSVAifQ.H4sIAAAAAAAAAFWMwQ6DIBBE_2XPHFRUWv5mxU1LA0hYSWya_ntRetDbvJeZ-cBrtaBhHNUNBHCeCrQlWeaS0DmLwdAucAXdDr2UdzV0SgBt8RB903RyF5GSP0azt0Evaaaky4GonPmCHgM-_sagedLF1I5ZcmI6CYzRvU88YQh1Ad8fhrxfZMoAAAA.lsj15hiakFFYuv8KmZe725GYgJbS1jbkf5N6Q5u-HQE 
+17:47:34.922 [http-nio-8080-exec-1] DEBUG c.m.k.c.s.filter.ShiroAuthcFilter - 0:0:0:0:0:0:0:1 
+17:47:34.923 [http-nio-8080-exec-1] INFO  c.m.kf100.conf.shiro.realm.JwtRealm - jwtRealm 认证..... 
+17:47:35.152 [http-nio-8080-exec-1] DEBUG c.m.k.mapper.TokenMapper.selectById - ==>  Preparing: SELECT id AS id,create_time AS createTime,user_id AS userId,expire_time AS expireTime FROM token WHERE id=?  
+17:47:35.171 [http-nio-8080-exec-1] DEBUG c.m.k.mapper.TokenMapper.selectById - ==> Parameters: 6678(Long) 
+17:47:35.175 [http-nio-8080-exec-1] DEBUG c.m.k.mapper.TokenMapper.selectById - <==      Total: 1 
+17:47:35.223 [http-nio-8080-exec-1] DEBUG c.m.k.m.S.selectAllUserListByPage - ==>  Preparing: SELECT COUNT(1) FROM sys_user su1 LEFT JOIN sys_user su2 ON su1.master_user_id = su2.id WHERE su1.status = 1 AND su1.user_type IN (1, 2)  
+17:47:35.226 [http-nio-8080-exec-1] DEBUG c.m.k.m.S.selectAllUserListByPage - ==> Parameters:  
+17:47:35.233 [http-nio-8080-exec-1] DEBUG c.m.k.m.S.selectAllUserListByPage - ==>  Preparing: SELECT su1.id,su1.user_name, su1.account,su1.account_type,su1.user_type,su1.create_time FROM sys_user su1 LEFT JOIN sys_user su2 ON su1.master_user_id = su2.id WHERE su1.status = 1 AND su1.user_type IN (1,2) LIMIT 0,6  
+17:47:35.234 [http-nio-8080-exec-1] DEBUG c.m.k.m.S.selectAllUserListByPage - ==> Parameters:  
+17:47:35.237 [http-nio-8080-exec-1] DEBUG c.m.k.m.S.selectAllUserListByPage - <==      Total: 3 
+17:48:09.953 [http-nio-8080-exec-4] DEBUG c.m.k.c.s.filter.ShiroAuthcFilter - eyJhbGciOiJIUzI1NiIsInppcCI6IkdaSVAifQ.H4sIAAAAAAAAAFWMwQ6DIBBE_2XPHFRUWv5mxU1LA0hYSWya_ntRetDbvJeZ-cBrtaBhHNUNBHCeCrQlWeaS0DmLwdAucAXdDr2UdzV0SgBt8RB903RyF5GSP0azt0Evaaaky4GonPmCHgM-_sagedLF1I5ZcmI6CYzRvU88YQh1Ad8fhrxfZMoAAAA.lsj15hiakFFYuv8KmZe725GYgJbS1jbkf5N6Q5u-HQE 
+17:48:09.953 [http-nio-8080-exec-4] DEBUG c.m.k.c.s.filter.ShiroAuthcFilter - 0:0:0:0:0:0:0:1 
+17:48:09.953 [http-nio-8080-exec-4] INFO  c.m.kf100.conf.shiro.realm.JwtRealm - jwtRealm 认证..... 
+17:48:09.962 [http-nio-8080-exec-4] DEBUG c.m.k.m.S.selectAllUserListByPage - ==>  Preparing: SELECT COUNT(1) FROM sys_user su1 LEFT JOIN sys_user su2 ON su1.master_user_id = su2.id WHERE su1.status = 1 AND su1.user_type IN (1, 2) AND su1.account LIKE '%huang%' AND su1.account_type = 1  
+17:48:09.979 [http-nio-8080-exec-4] DEBUG c.m.k.m.S.selectAllUserListByPage - ==> Parameters:  
+17:48:09.982 [http-nio-8080-exec-4] DEBUG c.m.k.m.S.selectAllUserListByPage - ==>  Preparing: SELECT su1.id,su1.user_name, su1.account,su1.account_type,su1.user_type,su1.create_time FROM sys_user su1 LEFT JOIN sys_user su2 ON su1.master_user_id = su2.id WHERE su1.status = 1 AND su1.user_type IN (1,2) AND su1.account LIKE '%huang%' AND su1.account_type =1 LIMIT 0,6  
+17:48:09.983 [http-nio-8080-exec-4] DEBUG c.m.k.m.S.selectAllUserListByPage - ==> Parameters:  
+17:48:09.986 [http-nio-8080-exec-4] DEBUG c.m.k.m.S.selectAllUserListByPage - <==      Total: 1 
+17:48:56.883 [http-nio-8080-exec-3] DEBUG c.m.k.c.s.filter.ShiroAuthcFilter - eyJhbGciOiJIUzI1NiIsInppcCI6IkdaSVAifQ.H4sIAAAAAAAAAFWMwQ6DIBBE_2XPHFRUWv5mxU1LA0hYSWya_ntRetDbvJeZ-cBrtaBhHNUNBHCeCrQlWeaS0DmLwdAucAXdDr2UdzV0SgBt8RB903RyF5GSP0azt0Evaaaky4GonPmCHgM-_sagedLF1I5ZcmI6CYzRvU88YQh1Ad8fhrxfZMoAAAA.lsj15hiakFFYuv8KmZe725GYgJbS1jbkf5N6Q5u-HQE 
+17:48:56.883 [http-nio-8080-exec-3] DEBUG c.m.k.c.s.filter.ShiroAuthcFilter - 0:0:0:0:0:0:0:1 
+17:48:56.883 [http-nio-8080-exec-3] INFO  c.m.kf100.conf.shiro.realm.JwtRealm - jwtRealm 认证..... 
+17:48:56.887 [http-nio-8080-exec-3] DEBUG c.m.k.m.S.selectAllUserListByPage - ==>  Preparing: SELECT COUNT(1) FROM sys_user su1 LEFT JOIN sys_user su2 ON su1.master_user_id = su2.id WHERE su1.status = 1 AND su1.user_type IN (1, 2) AND su1.account LIKE '%huang%' AND su1.account_type = 1  
+17:48:56.887 [http-nio-8080-exec-3] DEBUG c.m.k.m.S.selectAllUserListByPage - ==> Parameters:  
+17:48:56.891 [http-nio-8080-exec-3] DEBUG c.m.k.m.S.selectAllUserListByPage - ==>  Preparing: SELECT su1.id,su1.user_name, su1.account,su1.account_type,su1.user_type,su1.create_time FROM sys_user su1 LEFT JOIN sys_user su2 ON su1.master_user_id = su2.id WHERE su1.status = 1 AND su1.user_type IN (1,2) AND su1.account LIKE '%huang%' AND su1.account_type =1 LIMIT 0,6  
+17:48:56.891 [http-nio-8080-exec-3] DEBUG c.m.k.m.S.selectAllUserListByPage - ==> Parameters:  
+17:48:56.895 [http-nio-8080-exec-3] DEBUG c.m.k.m.S.selectAllUserListByPage - <==      Total: 2 
+17:49:04.072 [http-nio-8080-exec-5] DEBUG c.m.k.c.s.filter.ShiroAuthcFilter - eyJhbGciOiJIUzI1NiIsInppcCI6IkdaSVAifQ.H4sIAAAAAAAAAFWMwQ6DIBBE_2XPHFRUWv5mxU1LA0hYSWya_ntRetDbvJeZ-cBrtaBhHNUNBHCeCrQlWeaS0DmLwdAucAXdDr2UdzV0SgBt8RB903RyF5GSP0azt0Evaaaky4GonPmCHgM-_sagedLF1I5ZcmI6CYzRvU88YQh1Ad8fhrxfZMoAAAA.lsj15hiakFFYuv8KmZe725GYgJbS1jbkf5N6Q5u-HQE 
+17:49:04.072 [http-nio-8080-exec-5] DEBUG c.m.k.c.s.filter.ShiroAuthcFilter - 0:0:0:0:0:0:0:1 
+17:49:04.072 [http-nio-8080-exec-5] INFO  c.m.kf100.conf.shiro.realm.JwtRealm - jwtRealm 认证..... 
+17:49:04.078 [http-nio-8080-exec-5] DEBUG c.m.k.m.S.selectAllUserListByPage - ==>  Preparing: SELECT COUNT(1) FROM sys_user su1 LEFT JOIN sys_user su2 ON su1.master_user_id = su2.id WHERE su1.status = 1 AND su1.user_type IN (1, 2) AND su1.account LIKE '%huang%' AND su1.account_type = 1  
+17:49:04.079 [http-nio-8080-exec-5] DEBUG c.m.k.m.S.selectAllUserListByPage - ==> Parameters:  
+17:49:04.124 [http-nio-8080-exec-5] DEBUG c.m.k.m.S.selectAllUserListByPage - ==>  Preparing: SELECT su1.id,su1.user_name, su1.account,su1.account_type,su1.user_type,su1.create_time FROM sys_user su1 LEFT JOIN sys_user su2 ON su1.master_user_id = su2.id WHERE su1.status = 1 AND su1.user_type IN (1,2) AND su1.account LIKE '%huang%' AND su1.account_type =1 LIMIT 0,6  
+17:49:04.124 [http-nio-8080-exec-5] DEBUG c.m.k.m.S.selectAllUserListByPage - ==> Parameters:  
+17:49:04.127 [http-nio-8080-exec-5] DEBUG c.m.k.m.S.selectAllUserListByPage - <==      Total: 1 
+17:49:25.747 [http-nio-8080-exec-6] DEBUG c.m.k.c.s.filter.ShiroAuthcFilter - eyJhbGciOiJIUzI1NiIsInppcCI6IkdaSVAifQ.H4sIAAAAAAAAAFWMwQ6DIBBE_2XPHFRUWv5mxU1LA0hYSWya_ntRetDbvJeZ-cBrtaBhHNUNBHCeCrQlWeaS0DmLwdAucAXdDr2UdzV0SgBt8RB903RyF5GSP0azt0Evaaaky4GonPmCHgM-_sagedLF1I5ZcmI6CYzRvU88YQh1Ad8fhrxfZMoAAAA.lsj15hiakFFYuv8KmZe725GYgJbS1jbkf5N6Q5u-HQE 
+17:49:25.748 [http-nio-8080-exec-6] DEBUG c.m.k.c.s.filter.ShiroAuthcFilter - 0:0:0:0:0:0:0:1 
+17:49:25.748 [http-nio-8080-exec-6] INFO  c.m.kf100.conf.shiro.realm.JwtRealm - jwtRealm 认证..... 
+17:49:25.755 [http-nio-8080-exec-6] DEBUG c.m.k.m.S.selectAllUserListByPage - ==>  Preparing: SELECT COUNT(1) FROM sys_user su1 LEFT JOIN sys_user su2 ON su1.master_user_id = su2.id WHERE su1.status = 1 AND su1.user_type IN (1, 2) AND su1.account LIKE '%zhujiao%' AND su1.account_type = 1  
+17:49:25.756 [http-nio-8080-exec-6] DEBUG c.m.k.m.S.selectAllUserListByPage - ==> Parameters:  
+17:49:25.758 [http-nio-8080-exec-6] DEBUG c.m.k.m.S.selectAllUserListByPage - ==>  Preparing: SELECT su1.id,su1.user_name, su1.account,su1.account_type,su1.user_type,su1.create_time FROM sys_user su1 LEFT JOIN sys_user su2 ON su1.master_user_id = su2.id WHERE su1.status = 1 AND su1.user_type IN (1,2) AND su1.account LIKE '%zhujiao%' AND su1.account_type =1 LIMIT 0,6  
+17:49:25.759 [http-nio-8080-exec-6] DEBUG c.m.k.m.S.selectAllUserListByPage - ==> Parameters:  
+17:49:25.761 [http-nio-8080-exec-6] DEBUG c.m.k.m.S.selectAllUserListByPage - <==      Total: 1 
+17:49:35.423 [http-nio-8080-exec-7] DEBUG c.m.k.c.s.filter.ShiroAuthcFilter - eyJhbGciOiJIUzI1NiIsInppcCI6IkdaSVAifQ.H4sIAAAAAAAAAFWMwQ6DIBBE_2XPHFRUWv5mxU1LA0hYSWya_ntRetDbvJeZ-cBrtaBhHNUNBHCeCrQlWeaS0DmLwdAucAXdDr2UdzV0SgBt8RB903RyF5GSP0azt0Evaaaky4GonPmCHgM-_sagedLF1I5ZcmI6CYzRvU88YQh1Ad8fhrxfZMoAAAA.lsj15hiakFFYuv8KmZe725GYgJbS1jbkf5N6Q5u-HQE 
+17:49:35.423 [http-nio-8080-exec-7] DEBUG c.m.k.c.s.filter.ShiroAuthcFilter - 0:0:0:0:0:0:0:1 
+17:49:35.423 [http-nio-8080-exec-7] INFO  c.m.kf100.conf.shiro.realm.JwtRealm - jwtRealm 认证..... 
+17:49:35.427 [http-nio-8080-exec-7] DEBUG c.m.k.m.S.selectAllUserListByPage - ==>  Preparing: SELECT COUNT(1) FROM sys_user su1 LEFT JOIN sys_user su2 ON su1.master_user_id = su2.id WHERE su1.status = 1 AND su1.user_type IN (1, 2) AND su1.account LIKE '%zhujiao%' AND su1.account_type = 1  
+17:49:35.427 [http-nio-8080-exec-7] DEBUG c.m.k.m.S.selectAllUserListByPage - ==> Parameters:  
+17:49:35.429 [http-nio-8080-exec-7] DEBUG c.m.k.m.S.selectAllUserListByPage - ==>  Preparing: SELECT su1.id,su1.user_name, su1.account,su1.account_type,su1.user_type,su1.create_time FROM sys_user su1 LEFT JOIN sys_user su2 ON su1.master_user_id = su2.id WHERE su1.status = 1 AND su1.user_type IN (1,2) AND su1.account LIKE '%zhujiao%' AND su1.account_type =1  
+17:49:35.430 [http-nio-8080-exec-7] DEBUG c.m.k.m.S.selectAllUserListByPage - ==> Parameters:  
+17:49:35.433 [http-nio-8080-exec-7] DEBUG c.m.k.m.S.selectAllUserListByPage - <==      Total: 0 
+17:49:43.051 [http-nio-8080-exec-8] DEBUG c.m.k.c.s.filter.ShiroAuthcFilter - eyJhbGciOiJIUzI1NiIsInppcCI6IkdaSVAifQ.H4sIAAAAAAAAAFWMwQ6DIBBE_2XPHFRUWv5mxU1LA0hYSWya_ntRetDbvJeZ-cBrtaBhHNUNBHCeCrQlWeaS0DmLwdAucAXdDr2UdzV0SgBt8RB903RyF5GSP0azt0Evaaaky4GonPmCHgM-_sagedLF1I5ZcmI6CYzRvU88YQh1Ad8fhrxfZMoAAAA.lsj15hiakFFYuv8KmZe725GYgJbS1jbkf5N6Q5u-HQE 
+17:49:43.051 [http-nio-8080-exec-8] DEBUG c.m.k.c.s.filter.ShiroAuthcFilter - 0:0:0:0:0:0:0:1 
+17:49:43.051 [http-nio-8080-exec-8] INFO  c.m.kf100.conf.shiro.realm.JwtRealm - jwtRealm 认证..... 
+17:49:43.055 [http-nio-8080-exec-8] DEBUG c.m.k.m.S.selectAllUserListByPage - ==>  Preparing: SELECT COUNT(1) FROM sys_user su1 LEFT JOIN sys_user su2 ON su1.master_user_id = su2.id WHERE su1.status = 1 AND su1.user_type IN (1, 2) AND su1.account LIKE '%zhujiao%' AND su1.account_type = 1  
+17:49:43.056 [http-nio-8080-exec-8] DEBUG c.m.k.m.S.selectAllUserListByPage - ==> Parameters:  
+17:49:43.060 [http-nio-8080-exec-8] DEBUG c.m.k.m.S.selectAllUserListByPage - ==>  Preparing: SELECT su1.id,su1.user_name, su1.account,su1.account_type,su1.user_type,su1.create_time FROM sys_user su1 LEFT JOIN sys_user su2 ON su1.master_user_id = su2.id WHERE su1.status = 1 AND su1.user_type IN (1,2) AND su1.account LIKE '%zhujiao%' AND su1.account_type =1 LIMIT 0,6  
+17:49:43.060 [http-nio-8080-exec-8] DEBUG c.m.k.m.S.selectAllUserListByPage - ==> Parameters:  
+17:49:43.065 [http-nio-8080-exec-8] DEBUG c.m.k.m.S.selectAllUserListByPage - <==      Total: 1 
+17:50:06.800 [http-nio-8080-exec-9] DEBUG c.m.k.c.s.filter.ShiroAuthcFilter - eyJhbGciOiJIUzI1NiIsInppcCI6IkdaSVAifQ.H4sIAAAAAAAAAFWMwQ6DIBBE_2XPHFRUWv5mxU1LA0hYSWya_ntRetDbvJeZ-cBrtaBhHNUNBHCeCrQlWeaS0DmLwdAucAXdDr2UdzV0SgBt8RB903RyF5GSP0azt0Evaaaky4GonPmCHgM-_sagedLF1I5ZcmI6CYzRvU88YQh1Ad8fhrxfZMoAAAA.lsj15hiakFFYuv8KmZe725GYgJbS1jbkf5N6Q5u-HQE 
+17:50:06.800 [http-nio-8080-exec-9] DEBUG c.m.k.c.s.filter.ShiroAuthcFilter - 0:0:0:0:0:0:0:1 
+17:50:06.800 [http-nio-8080-exec-9] INFO  c.m.kf100.conf.shiro.realm.JwtRealm - jwtRealm 认证..... 
+17:50:06.804 [http-nio-8080-exec-9] DEBUG c.m.k.m.S.selectAllUserListByPage - ==>  Preparing: SELECT COUNT(1) FROM sys_user su1 LEFT JOIN sys_user su2 ON su1.master_user_id = su2.id WHERE su1.status = 1 AND su1.user_type IN (1, 2) AND su1.account LIKE '%zhujiao%' AND su1.account_type = 1  
+17:50:06.805 [http-nio-8080-exec-9] DEBUG c.m.k.m.S.selectAllUserListByPage - ==> Parameters:  
+17:50:06.807 [http-nio-8080-exec-9] DEBUG c.m.k.m.S.selectAllUserListByPage - ==>  Preparing: SELECT su1.id,su1.user_name, su1.account,su1.account_type,su1.user_type,su1.create_time FROM sys_user su1 LEFT JOIN sys_user su2 ON su1.master_user_id = su2.id WHERE su1.status = 1 AND su1.user_type IN (1,2) AND su1.account LIKE '%zhujiao%' AND su1.account_type =1 LIMIT 0,6  
+17:50:06.807 [http-nio-8080-exec-9] DEBUG c.m.k.m.S.selectAllUserListByPage - ==> Parameters:  
+17:50:06.809 [http-nio-8080-exec-9] DEBUG c.m.k.m.S.selectAllUserListByPage - <==      Total: 1 
+17:50:33.539 [http-nio-8080-exec-10] DEBUG c.m.k.c.s.filter.ShiroAuthcFilter - eyJhbGciOiJIUzI1NiIsInppcCI6IkdaSVAifQ.H4sIAAAAAAAAAFWMwQ6DIBBE_2XPHFRUWv5mxU1LA0hYSWya_ntRetDbvJeZ-cBrtaBhHNUNBHCeCrQlWeaS0DmLwdAucAXdDr2UdzV0SgBt8RB903RyF5GSP0azt0Evaaaky4GonPmCHgM-_sagedLF1I5ZcmI6CYzRvU88YQh1Ad8fhrxfZMoAAAA.lsj15hiakFFYuv8KmZe725GYgJbS1jbkf5N6Q5u-HQE 
+17:50:33.540 [http-nio-8080-exec-10] DEBUG c.m.k.c.s.filter.ShiroAuthcFilter - 0:0:0:0:0:0:0:1 
+17:50:33.540 [http-nio-8080-exec-10] INFO  c.m.kf100.conf.shiro.realm.JwtRealm - jwtRealm 认证..... 
+17:50:33.544 [http-nio-8080-exec-10] DEBUG c.m.k.m.S.selectAllUserListByPage - ==>  Preparing: SELECT COUNT(1) FROM sys_user su1 LEFT JOIN sys_user su2 ON su1.master_user_id = su2.id WHERE su1.status = 1 AND su1.user_type IN (1, 2) AND su1.user_name LIKE '%黄主任%'  
+17:50:33.546 [http-nio-8080-exec-10] DEBUG c.m.k.m.S.selectAllUserListByPage - ==> Parameters:  
+17:50:33.548 [http-nio-8080-exec-10] DEBUG c.m.k.m.S.selectAllUserListByPage - ==>  Preparing: SELECT su1.id,su1.user_name, su1.account,su1.account_type,su1.user_type,su1.create_time FROM sys_user su1 LEFT JOIN sys_user su2 ON su1.master_user_id = su2.id WHERE su1.status = 1 AND su1.user_type IN (1,2) AND su1.user_name LIKE '%黄主任%' LIMIT 0,6  
+17:50:33.549 [http-nio-8080-exec-10] DEBUG c.m.k.m.S.selectAllUserListByPage - ==> Parameters:  
+17:50:33.551 [http-nio-8080-exec-10] DEBUG c.m.k.m.S.selectAllUserListByPage - <==      Total: 2 

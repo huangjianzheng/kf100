@@ -1,0 +1,16 @@
+shiro:
+  login-url: /page/admin/index.html#/login
+  success-url: page/admin/index.html
+  unauthorized-url: page/admin/index.html#/404
+  filter-chain-definition-map:
+    /static/**: anon
+    /page/download: anon
+    /page/h5/**: anon
+    /page/admin/**: anon
+    /api/admin/login: anon
+    /webjars/**: anon
+    /v2/api-docs: anon
+    /swagger-resources: anon
+    /doc.html: anon
+    /druid/**: anon
+    /: anon

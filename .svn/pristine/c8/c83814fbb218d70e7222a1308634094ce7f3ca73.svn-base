@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.medhead.kf100.mapper.PayLogMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.medhead.kf100.model.PayLog">
+        <id column="id" property="id" />
+        <result column="item_type" property="itemType" />
+        <result column="item_id" property="itemId" />
+        <result column="user_id" property="userId" />
+        <result column="out_trade_no" property="outTradeNo" />
+        <result column="trade_no" property="tradeNo" />
+        <result column="pay_type" property="payType" />
+        <result column="pay_time" property="payTime" />
+        <result column="trade_status" property="tradeStatus" />
+        <result column="buyer_id" property="buyerId" />
+        <result column="total_fee" property="totalFee" />
+    </resultMap>
+
+</mapper>
